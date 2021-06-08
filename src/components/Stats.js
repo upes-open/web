@@ -6,7 +6,6 @@ import {
     Stat,
     StatLabel,
     StatNumber,
-    useColorModeValue,
   } from '@chakra-ui/react';
   import { BsPerson } from 'react-icons/bs';
   import { FiServer } from 'react-icons/fi';

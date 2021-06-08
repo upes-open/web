@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { React } from 'react';
 import {
   Box,
   Container,
@@ -59,7 +59,7 @@ export default function Footer() {
       bg={useColorModeValue('gray.50', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
       <Container as={Stack} maxW={'6xl'} py={10}>
-        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={10}>
+        <SimpleGrid columns={{ base: 1, sm: 1, md: 3 }} spacing={12}>
           <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
             <Link href={'#'}>About Us</Link>
