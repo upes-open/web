@@ -1,6 +1,6 @@
 import { React } from 'react';
-import { Box, SimpleGrid, Icon, Text, Stack, Flex } from '@chakra-ui/react';
-import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
+import { Box, chakra,SimpleGrid, Icon, Text, Stack, Flex } from '@chakra-ui/react';
+import { FcPortraitMode,FcApproval, FcDonate } from 'react-icons/fc';
 
 
 const Feature = ({title, text, icon}) => {
@@ -17,7 +17,7 @@ const Feature = ({title, text, icon}) => {
         mb={1}>
         {icon}
       </Flex>
-      <Text fontSize={'lg'} fontWeight={600}>{title}</Text>
+      <Text fontSize={'3xl'} fontWeight={'bold'}>{title}</Text>
       <Text color={'gray.600'}>{text}</Text>
     </Stack>
   );
@@ -26,26 +26,34 @@ const Feature = ({title, text, icon}) => {
 export default function Features() {
   return (
     <Box p={4} m={8}>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+        <chakra.h1
+          textAlign={'center'}
+          fontSize={'4xl'}
+          py={10}
+          color={'green.400'}
+          fontWeight={'bold'}>
+          Our core principles
+        </chakra.h1>
+      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8}>
         <Feature
-          icon={<Icon as={FcAssistant} w={10} h={10} />}
+          icon={<Icon as={FcPortraitMode} w={10} h={10} />}
           title={'Aware'}
           text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+            'We aim at spreading awareness about the advantage of using Open Source softwares over conventional proprietary softwares.'
+          }
+        />
+        <Feature
+          icon={<Icon as={FcApproval} w={10} h={10} />}
+          title={'Adopt'}
+          text={
+            'Spreading awareness is futile until and unless we motivate people to adopt the prevailing Open Source softwares in their work environment'
           }
         />
         <Feature
           icon={<Icon as={FcDonate} w={10} h={10} />}
-          title={'Adopt'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        />
-        <Feature
-          icon={<Icon as={FcInTransit} w={10} h={10} />}
           title={'Contribute'}
           text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+            'The whole concept of Open Source revolves around community which uses it and contributing to the community is always a matter of prestige.'
           }
         />
       </SimpleGrid>
