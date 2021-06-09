@@ -6,7 +6,9 @@ import {
     Text,
     Button,
     Image,
-    HStack
+    HStack,
+    SimpleGrid,
+    Box
   } from '@chakra-ui/react';
 
 export default function Hero() {
@@ -28,7 +30,6 @@ export default function Hero() {
           </Heading>
           <Text color={'gray.500'} maxW={'3xl'}>
           OPEN is an initiative started with the aim of contributing to the Open Source community by providing a platform for training, guidance and awareness about various possibilities in the world of software to students and enthusiasts. We are motivated to provide a holistic environment to develop programs that can solve real-world problems while enhancing your communication, teamwork, leadership, ideation and other soft skills.
-
           </Text>
           <Stack spacing={6} direction={'row'}>
             <Button
@@ -43,13 +44,20 @@ export default function Hero() {
               Learn more
             </Button>
           </Stack>
-          <Flex alig={'center'} w={'full'}>
+          {/* <Stack columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
+          <Flex align={'center'} w={'full'}>
             <HStack>
                 <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open.png" alt="opensource"/>
                 <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open1.png" alt="opensource"/>
                 <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open2.png" alt="opensource"/>
             </HStack>
           </Flex>
+          </Stack> */}
+            <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
+              <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open.png" alt="opensource"/>
+              <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open.png" alt="opensource"/>
+              <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open.png" alt="opensource"/>
+            </SimpleGrid>
         </Stack>
       </Container>
     );
