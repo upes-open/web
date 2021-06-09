@@ -1,14 +1,12 @@
 import {
-    Flex,
     Container,
     Heading,
     Stack,
     Text,
     Button,
     Image,
-    HStack,
     SimpleGrid,
-    Box
+    
   } from '@chakra-ui/react';
 
 export default function Hero() {
