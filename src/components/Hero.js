@@ -55,8 +55,8 @@ export default function Hero() {
           </Stack> */}
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
               <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open.png" alt="opensource"/>
-              <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open.png" alt="opensource"/>
-              <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open.png" alt="opensource"/>
+              <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open1.png" alt="opensource"/>
+              <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open2.png" alt="opensource"/>
             </SimpleGrid>
         </Stack>
       </Container>
