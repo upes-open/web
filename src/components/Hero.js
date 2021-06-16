@@ -1,4 +1,5 @@
 import {
+
     Container,
     Heading,
     Stack,
@@ -41,24 +42,35 @@ export default function Hero() {
             <Button rounded={'full'} px={6}>
               Learn more
             </Button>
-          </Stack>
-          {/* <Stack columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
-          <Flex align={'center'} w={'full'}>
-            <HStack>
-                <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open.png" alt="opensource"/>
-                <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open1.png" alt="opensource"/>
-                <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open2.png" alt="opensource"/>
-            </HStack>
-          </Flex>
-          </Stack> */}
-            <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
-              <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open.png" alt="opensource"/>
-              <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open1.png" alt="opensource"/>
-              <Image h={'200'} w={'200'} src="https://raw.githubusercontent.com/upes-open/upes-open/main/open2.png" alt="opensource"/>
-            </SimpleGrid>
-        </Stack>
-      </Container>
-    );
-  }
-  
-  
+       
+        <Flex alig={"center"} w={"full"} flexWrap={"wrap"}>
+          <Box>
+            <Image
+              h={"200"}
+              w={"200"}
+              src="https://raw.githubusercontent.com/upes-open/upes-open/main/open.png"
+              alt="opensource"
+            />
+          </Box>
+          <Box>
+            <Image
+              h={"200"}
+              w={"200"}
+              src="https://raw.githubusercontent.com/upes-open/upes-open/main/open1.png"
+              alt="opensource"
+            />
+          </Box>
+
+          <Box>
+            <Image
+              h={"200"}
+              w={"200"}
+              src="https://raw.githubusercontent.com/upes-open/upes-open/main/open2.png"
+              alt="opensource"
+            />
+          </Box>
+        </Flex>
+      </Stack>
+    </Container>
+  );
+}
