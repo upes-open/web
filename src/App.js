@@ -1,6 +1,7 @@
+import HomePage from './screens/HomePage'
 function App() {
   return (
-      <h1>Hello Internet! 👋</h1>
+      <HomePage/>
   );
 }
 
