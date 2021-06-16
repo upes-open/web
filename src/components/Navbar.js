@@ -73,11 +73,10 @@ const MenuLinks = ({ isOpen }) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/">About</MenuItem>
+        <MenuItem to="/web">Home</MenuItem>
         <MenuItem to="/events">Events </MenuItem>
-        <MenuItem to="/faetures">Projects </MenuItem>
-        <MenuItem to="/pricing">Contact </MenuItem>
-        <MenuItem to="/signup" isLast>
+        <MenuItem to="/projects">Projects </MenuItem>
+        <MenuItem to="#" isLast>
           <Button
             size="sm"
             rounded="md"
@@ -87,7 +86,7 @@ const MenuLinks = ({ isOpen }) => {
               bg: ["green.500"]
             }}
           >
-            Partner with Us
+            Start Contributing
           </Button>
         </MenuItem>
       </Stack>
