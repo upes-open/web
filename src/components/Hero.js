@@ -36,7 +36,7 @@ export default function Hero() {
               colorScheme={'green'}
               bg={'green.400'}
               _hover={{ bg: 'green.500' }}>
-              Projects
+              Browse Our Projects
             </Button>
             <Button rounded={'full'} px={6}>
               Learn more
