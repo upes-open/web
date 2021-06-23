@@ -20,7 +20,7 @@ export default function FacultyCard() {
         color={"green"}
         margin={6}
       >
-        FACULTY COORDINATORS
+        Faculty Coordinators
       </Heading>
 
       <Flex flexWrap={"wrap"} justifyContent={"center"}>

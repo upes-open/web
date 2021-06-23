@@ -1,7 +1,7 @@
 export const CollabrationData = [{
         name: "Abhijeet Prasad",
         designation: "Collaboration Manager",
-        imageURL: "/teamImages/Abhijeet.jpg",
+        imageURL: "https://ibb.co/9gk67qF",
         GitHub: "https://github.com/kudoabhijeet",
         LinkedIn: "https://www.linkedin.com/in/kudoabhijeet",
         Twitter: "http://twitter.com/kudoabhijeet",

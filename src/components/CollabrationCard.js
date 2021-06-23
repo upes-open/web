@@ -20,7 +20,7 @@ export default function CollabrationCard() {
         color={"green"}
         margin={6}
       >
-        COLLABRATION VERTICAL
+        Collabration Vertical
       </Heading>
       <Flex flexWrap={"wrap"} justifyContent={"center"}>
         {CollabrationData.map((data) => (

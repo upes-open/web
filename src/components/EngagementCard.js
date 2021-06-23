@@ -20,7 +20,7 @@ export default function EngagementCard() {
         color={"green"}
         margin={6}
       >
-        ENGAGEMENT VERTICAL
+        Engagement Vertical
       </Heading>
       <Flex flexWrap={"wrap"} justifyContent={"center"}>
         {EngagementData.map((data) => (
