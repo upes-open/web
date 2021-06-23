@@ -59,7 +59,7 @@ const FetchProjects = () => {
               p={4}
               display={{ md: "flex" }}
               maxWidth="32rem"
-              borderWidth={3}
+              borderWidth={2}
               margin={2}
             >
               <Stack
