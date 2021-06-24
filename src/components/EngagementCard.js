@@ -20,7 +20,7 @@ export default function EngagementCard() {
         color={"green"}
         margin={6}
       >
-        ENGAGEMENT VERTICAL
+        Engagement Vertical
       </Heading>
       <Flex flexWrap={"wrap"} justifyContent={"center"}>
         {EngagementData.map((data) => (
@@ -75,7 +75,7 @@ export default function EngagementCard() {
                   bg: "green.500",
                 }}
               >
-                <a href="https://www.youtube.com/" target="blank">
+                <a href={data.LinkedIn} target="blank">
                   LinkedIn
                 </a>
               </Button>
@@ -95,7 +95,7 @@ export default function EngagementCard() {
                   bg: "green.500",
                 }}
               >
-                <a href="https://www.youtube.com/" target="blank">
+                <a href={data.Twitter} target="blank">
                   Twitter
                 </a>
               </Button>
