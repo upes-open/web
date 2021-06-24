@@ -75,7 +75,7 @@ export default function FacultyCard() {
                   bg: "green.500",
                 }}
               >
-                <a href="https://www.youtube.com/" target="blank">
+                <a href={data.LinkedIn} target="blank">
                   LinkedIn
                 </a>
               </Button>
@@ -95,7 +95,7 @@ export default function FacultyCard() {
                   bg: "green.500",
                 }}
               >
-                <a href="https://www.youtube.com/" target="blank">
+                <a href={data.Twitter} target="blank">
                   Twitter
                 </a>
               </Button>
