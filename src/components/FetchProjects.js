@@ -6,7 +6,7 @@ import TextTransition, { presets } from "react-text-transition";
 
 import Spinner from "./Spinner";
 
-const TEXTS = ["AWARE", "ADOPT", "CONTRIBUTE"];
+const TEXTS = ["Aware", "Adopt", "Contribute"];
 
 const FetchProjects = () => {
   const [index, setIndex] = useState(0);
@@ -59,7 +59,7 @@ const FetchProjects = () => {
               p={4}
               display={{ md: "flex" }}
               maxWidth="32rem"
-              borderWidth={2}
+              borderWidth={4}
               margin={2}
             >
               <Stack
