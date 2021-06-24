@@ -40,7 +40,7 @@ export const CollabrationData = [{
         Twitter: "https://twitter.com/Akashsaini7778",
     },
     {
-        name: "Khusboo",
+        name: "Khushboo Jhakmola",
         designation: "Student Developer",
         imageURL: "/teamImages/Akash.jpeg",
         GitHub: "https://github.com/akash2237778",
