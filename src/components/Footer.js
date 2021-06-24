@@ -1,28 +1,21 @@
+import logo from '../assets/logo.png'
 import { React } from 'react';
 import {
   Box,
-  Container,
-  Stack,
-  SimpleGrid,
-  Text,
-  Link,
-  VisuallyHidden,
   chakra,
+  Container,
+  Link,
+  Stack,
+  Text,
   useColorModeValue,
+  VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
-
-
-const ListHeader = ({
-    children,
-    label,
-    href,
-  }) => {
+const Logo = (props: any) => {
   return (
-    <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
-      {children}
-    </Text>
+    <a href="/web"><img href="/web" width='125px' height='40px' src={logo} alt="Open Community Logo"/></a>
+    
   );
 };
 
@@ -58,31 +51,22 @@ export default function Footer() {
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container as={Stack} maxW={'6xl'} py={10}>
-        <SimpleGrid columns={{ base: 1, sm: 1, md: 3 }} spacing={12}>
-          <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About Us</Link>
-            <Link href={'#'}>Blog</Link>
-            <Link href={'#'}>Careers</Link>
-            <Link href={'#'}>Contact Us</Link>
-          </Stack>
-
-          <Stack align={'flex-start'}>
-            <ListHeader>Support</ListHeader>
-            <Link href={'#'}>Help Center</Link>
-            <Link href={'#'}>Safety Center</Link>
-            <Link href={'#'}>Community Guidelines</Link>
-          </Stack>
-
-          <Stack align={'flex-start'}>
-            <ListHeader>Legal</ListHeader>
-            <Link href={'#'}>Cookies Policy</Link>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Law Enforcement</Link>
-          </Stack>
-        </SimpleGrid>
+      <Container
+        as={Stack}
+        maxW={'6xl'}
+        py={4}
+        spacing={4}
+        justify={'center'}
+        align={'center'}>
+        <Logo />
+        <Stack direction={'row'} spacing={3}>
+          <Link href={'/web'}>Home</Link>
+          <Link href={'/projects'}>Projects</Link>
+          <Link href={'/events'}>Events</Link>
+          <Link href={'/team'}>Team</Link>
+          <Link href={'/about'}>About</Link>
+          <Link href={'/contact'}>Contact</Link>
+        </Stack>
       </Container>
 
       <Box
@@ -95,18 +79,21 @@ export default function Footer() {
           py={4}
           direction={{ base: 'column', md: 'row' }}
           spacing={4}
-          justify={{ md: 'space-between' }}
-          align={{ md: 'center' }}>
-          <Text>© 2021 UPES OPEN. All rights reserved</Text>
+          justify={{ base: 'center', md: 'space-between' }}
+          align={{ base: 'center', md: 'center' }}>
+          <Text>© 2021 Open Community. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
+            <SocialButton label={'Twitter'} href={'https://twitter.com/UpesOpen'}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
+            <SocialButton label={'LinkedIn'} href={'https://www.linkedin.com/company/open-community/mycompany/'}>
+              <FaLinkedin />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'} href={'https://www.instagram.com/upesopen_/'}>
               <FaInstagram />
+            </SocialButton>
+            <SocialButton label={'YouTube'} href={'https://www.youtube.com/channel/UCxdpyRSNdAKQ6R6Jpv_-nKQ'}>
+              <FaYoutube />
             </SocialButton>
           </Stack>
         </Container>

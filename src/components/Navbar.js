@@ -10,7 +10,10 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer {...props}>
-      <Logo w="70px" h="30px" />
+      <Logo
+        w="100px"
+        color={"green"}
+      />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
@@ -70,21 +73,20 @@ const MenuLinks = ({ isOpen }) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/">About</MenuItem>
+        <MenuItem to="/web">Home</MenuItem>
         <MenuItem to="/events">Events </MenuItem>
         <MenuItem to="/projects">Projects </MenuItem>
-        <MenuItem to="/pricing">Contact </MenuItem>
-        <MenuItem to="/signup" isLast>
+        <MenuItem to="#" isLast>
           <Button
             size="sm"
             rounded="md"
             color={"white"}
-            bg={"green"}
+            bg={'green'}
             _hover={{
-              bg: ["green.500"],
+              bg: ["green.500"]
             }}
           >
-            Partner with Us
+            Start Contributing
           </Button>
         </MenuItem>
       </Stack>

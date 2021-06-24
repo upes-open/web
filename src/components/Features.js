@@ -1,7 +1,5 @@
 import { React } from 'react';
-import { Box, chakra,SimpleGrid, Icon, Text, Stack, Flex } from '@chakra-ui/react';
-import { FcPortraitMode,FcApproval, FcDonate } from 'react-icons/fc';
-
+import { Box, chakra,SimpleGrid, Image, Text, Stack, Flex } from '@chakra-ui/react';
 
 const Feature = ({title, text, icon}) => {
   return (
@@ -30,27 +28,26 @@ export default function Features() {
           textAlign={'center'}
           fontSize={'4xl'}
           py={10}
-          color={'green.400'}
           fontWeight={'bold'}>
-          Our core principles
+          Our Core Principles
         </chakra.h1>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8}>
         <Feature
-          icon={<Icon as={FcPortraitMode} w={10} h={10} />}
+          icon={<Image src={'https://raw.githubusercontent.com/upes-open/Open-Mobile/master/images/educate.png'} w={10} h={10} />}
           title={'Aware'}
           text={
             'We aim at spreading awareness about the advantage of using Open Source softwares over conventional proprietary softwares.'
           }
         />
         <Feature
-          icon={<Icon as={FcApproval} w={10} h={10} />}
+          icon={<Image src={'https://raw.githubusercontent.com/upes-open/Open-Mobile/master/images/adopt.png'} w={10} h={10} />}
           title={'Adopt'}
           text={
             'Spreading awareness is futile until and unless we motivate people to adopt the prevailing Open Source softwares in their work environment'
           }
         />
         <Feature
-          icon={<Icon as={FcDonate} w={10} h={10} />}
+          icon={<Image src={'https://raw.githubusercontent.com/upes-open/Open-Mobile/master/images/contribute.png'} w={10} h={10} />}
           title={'Contribute'}
           text={
             'The whole concept of Open Source revolves around community which uses it and contributing to the community is always a matter of prestige.'

@@ -47,7 +47,7 @@ import {
           textAlign={'center'}
           fontSize={'4xl'}
           py={10}
-          color={'green.400'}
+          color={'black.400'}
           fontWeight={'bold'}>
           Our community is growing, you could be too.
         </chakra.h1>
