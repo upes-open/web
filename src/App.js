@@ -10,28 +10,32 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/web">
+        <Route path="/web">
           <HomePage />
         </Route>
       </Switch>
       <Switch>
-        <Route exact path="/projects" component={Projects}></Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
       </Switch>
       <Switch>
-        <Route exact path="/team" component={TeamPage}></Route>
+        <Route path="/team">
+          <TeamPage />
+        </Route>
       </Switch>
       <Switch>
-        <Route exact path="/about">
+        <Route path="/about">
           <AboutPage />
         </Route>
       </Switch>
       <Switch>
-        <Route exact path="/contact">
+        <Route path="/contact">
           <ContactPage />
         </Route>
       </Switch>
       <Switch>
-        <Route exact path="/event">
+        <Route path="/events">
           <EventPage />
         </Route>
       </Switch>
