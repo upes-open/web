@@ -8,32 +8,32 @@ import EventPage from "./screens/EventPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/web" >
       <Switch>
-        <Route exact path="/web">
+        <Route path='/' exact component={HomePage} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/team' component={TeamPage} />
+        <Route path='/about' component={AboutPage} />
+        <Route path='/events' component={EventPage} />
+        {/* <Route exact path="/">
           <HomePage />
         </Route>
-      </Switch>
-      <Switch>
+      
         <Route exact path="/projects" component={Projects}></Route>
-      </Switch>
-      <Switch>
+      
         <Route exact path="/team" component={TeamPage}></Route>
-      </Switch>
-      <Switch>
+      
         <Route exact path="/about">
           <AboutPage />
         </Route>
-      </Switch>
-      <Switch>
+      
         <Route exact path="/contact">
           <ContactPage />
         </Route>
-      </Switch>
-      <Switch>
+     
         <Route exact path="/event">
           <EventPage />
-        </Route>
+        </Route> */}
       </Switch>
     </Router>
   );
