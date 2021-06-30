@@ -70,7 +70,7 @@ const MenuLinks = ({ isOpen }) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/web">Home</MenuItem>
+        <MenuItem to="/">Home</MenuItem>
         <MenuItem to="/events">Events </MenuItem>
         <MenuItem to="/projects">Projects </MenuItem>
         <MenuItem to="https://github.com/upes-open/first-contributions" isLast>
