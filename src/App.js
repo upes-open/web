@@ -14,6 +14,7 @@ function App() {
         <Route path='/projects' component={Projects} />
         <Route path='/team' component={TeamPage} />
         <Route path='/about' component={AboutPage} />
+        <Route path='/contact' component={ContactPage} />
         <Route path='/events' component={EventPage} />
       </Switch>
     </Router>
