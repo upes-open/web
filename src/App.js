@@ -10,37 +10,14 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/web">
-          <HomePage />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/team">
-          <TeamPage />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/about">
-          <AboutPage />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/contact">
-          <ContactPage />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/events">
-          <EventPage />
-        </Route>
+        <Route path='/' exact component={HomePage} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/team' component={TeamPage} />
+        <Route path='/about' component={AboutPage} />
+        <Route path='/events' component={EventPage} />
       </Switch>
     </Router>
   );
-}
+} 
 
 export default App;
