@@ -5,9 +5,9 @@ import { Box } from "@chakra-ui/react";
 export default function Logo(props) {
   return (
     <Box {...props}>
-      <a href="/web">
+      <a href="/">
         <img
-          href="/web"
+          href="/"
           width="200px"
           height="60px"
           src={logo}
