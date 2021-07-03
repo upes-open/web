@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# OPEN WEB GUIDE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- [![Build Status](https://github.com/github/opensource.guide/workflows/GitHub%20Actions%20CI/badge.svg)](https://github.com/github/opensource.guide/actions) -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b20f1c91-b775-4dba-b505-efe059abb4db/deploy-status)](https://app.netlify.com/sites/upes-open/deploys)
 
-## Available Scripts
+Open Web is basically the community website which gives information about the organisation, projects, events and team members. Purely made in react by open source contributors, it is a beginner friendly repository where anyone who just started learning react can come and contribute. 
 
-In the project directory, you can run:
+## Contributing to OPEN WEB
 
-### `yarn start`
+A big welcome and thank you for considering contributing to OPEN open source projects! It’s people like you that make it a reality for users in our community.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Reading and following these guidelines will help us make the contribution process easy and effective for everyone involved. It also communicates that you agree to respect the time of the developers managing and developing these open source projects. In return, we will reciprocate that respect by addressing your issue, assessing changes, and helping you finalize your pull requests.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Getting Started
 
-### `yarn test`
+Contributions are made to this repo via Issues and Pull Requests (PRs). Please follow the steps mentioned below:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Fork the repository to your own Github account
+2. Clone the project to your machine
+3. Create a branch locally with a succinct but descriptive name
+4. Commit changes to the branch
+5. Following any formatting and testing guidelines specific to this repo
+6. Push changes to your fork
+7. Open a PR in our repository and follow the PR template so that we can efficiently review the changes.
 
-### `yarn build`
+## Project Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Installation:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm install`  
 
-### `yarn eject`
+To Start Server:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`npm start`  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To Visit App:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`localhost:3000`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Getting Help
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Join our [slack](https://join.slack.com/t/upes-open/shared_invite/zt-rl7kras2-npXTAjoyk6Z1DLToCyFthQ) channel in case you feel any difficulty.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Credit goes to these people. Feel free to contribute! 
 
-### Analyzing the Bundle Size
+<table>
+	<tr>
+		<td>
+			<a href="https://github.com/upes-open/web/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=upes-open/web" />
+</a>
+		</td>
+	</tr>
+</table>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
