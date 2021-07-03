@@ -14,7 +14,7 @@ import { FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
 const Logo = (props: any) => {
   return (
-    <a href="/web"><img href="/web" width='125px' height='40px' src={logo} alt="Open Community Logo"/></a>
+    <a href="/"><img href="/" width='100px' height='20px' src={logo} alt="Open Community Logo"/></a>
     
   );
 };
