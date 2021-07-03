@@ -1,12 +1,19 @@
+import logo from "../assets/logo.png";
 import React from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 export default function Logo(props) {
   return (
     <Box {...props}>
-      <Text fontSize="lg" fontWeight="bold">
-        LOGO
-      </Text>
+      <a href="/">
+        <img
+          href="/"
+          width="200px"
+          height="60px"
+          src={logo}
+          alt="Open Community Logo"
+        />
+      </a>
     </Box>
   );
 }

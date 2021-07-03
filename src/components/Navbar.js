@@ -10,10 +10,7 @@ const NavBar = (props) => {
 
   return (
     <NavBarContainer {...props}>
-      <Logo
-        w="100px"
-        color={"green"}
-      />
+      <Logo w="80px" color={"green"} />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
@@ -73,21 +70,20 @@ const MenuLinks = ({ isOpen }) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/">About</MenuItem>
+        <MenuItem to="/">Home</MenuItem>
         <MenuItem to="/events">Events </MenuItem>
-        <MenuItem to="/faetures">Projects </MenuItem>
-        <MenuItem to="/pricing">Contact </MenuItem>
-        <MenuItem to="/signup" isLast>
+        <MenuItem to="/projects">Projects </MenuItem>
+        <MenuItem to="https://github.com/upes-open/first-contributions" isLast>
           <Button
             size="sm"
             rounded="md"
             color={"white"}
-            bg={'green'}
+            bg={"green"}
             _hover={{
-              bg: ["green.500"]
+              bg: ["green.500"],
             }}
           >
-            Partner with Us
+            Start Contributing
           </Button>
         </MenuItem>
       </Stack>
@@ -103,8 +99,8 @@ const NavBarContainer = ({ children, ...props }) => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      mb={8}
-      p={8}
+      mb={4}
+      p={5}
       bg={["primary.500", "primary.500", "transparent", "transparent"]}
       color={"green"}
       {...props}
