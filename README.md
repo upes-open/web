@@ -2,6 +2,9 @@
 
 <!-- [![Build Status](https://github.com/github/opensource.guide/workflows/GitHub%20Actions%20CI/badge.svg)](https://github.com/github/opensource.guide/actions) -->
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b20f1c91-b775-4dba-b505-efe059abb4db/deploy-status)](https://app.netlify.com/sites/upes-open/deploys)
+![Issues](https://img.shields.io/github/issues/upes-open/web)
+![Lines of Code](https://img.shields.io/tokei/lines/github/upes-open/web)
+![Last Commit](https://img.shields.io/github/last-commit/upes-open/web)
 
 Open Web is basically the community website which gives information about the organisation, projects, events and team members. Purely made in react by open source contributors, it is a beginner friendly repository where anyone who just started learning react can come and contribute. 
 

@@ -1,17 +1,14 @@
-export const FacultyData = [{
-        name: "",
+export const FacultyData = [
+    {
+        name: "Dr. Monit Kapoor",
         designation: "Faculty Coordinator",
-        imageURL: "/teamimgs/Adarsh.jpg",
-        GitHub: "https://github.com/Ad1106/",
-        LinkedIn: "https://linkedin.com/in/adarsh-shukla-222a92163",
-        Twitter: "https://twitter.com/AdarshS92183807",
+        imageURL: "/teamImages/faculty/Monit.jpg",
+        LinkedIn: "https://www.linkedin.com/in/dr-monit-kapoor-55805677/?originalSubdomain=in",
     },
     {
-        name: "",
+        name: "Dr. Gourav Bathla",
         designation: "Faculty Coordinator",
-        imageURL: "/teamimgs/Adarsh.jpg",
-        GitHub: "https://github.com/Ad1106/",
-        LinkedIn: "https://linkedin.com/in/adarsh-shukla-222a92163",
-        Twitter: "https://twitter.com/AdarshS92183807",
+        imageURL: "/teamImages/faculty/Gourav.jpg",
+        LinkedIn: "https://www.linkedin.com/in/dr-gourav-bathla-b2155913/?originalSubdomain=in",
     },
 ];
