@@ -40,7 +40,7 @@ export const CollabrationData = [{
         LinkedIn: "https://www.linkedin.com/in/keshav-garg-7669a9199/",
     },
     {
-        name: "Khushboo Jhakmola",
+        name: "Khushboo Jakhmola",
         designation: "Student Developer",
         imageURL: "/teamImages/collab/Khusbhoo.jpeg",
         LinkedIn: "https://www.linkedin.com/in/khushboo-jakhmola-a94406190",
