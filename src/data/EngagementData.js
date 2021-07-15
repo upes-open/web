@@ -1,6 +1,6 @@
 export const EngagementData = [{
         name: " Adarsh Shukla",
-        designation: "Engagement Manager",
+        designation: "President",
         imageURL: "/teamImages/Adarsh.jpg",
         GitHub: "https://github.com/Ad1106/",
         LinkedIn: "https://linkedin.com/in/adarsh-shukla-222a92163",
@@ -9,7 +9,7 @@ export const EngagementData = [{
 
     {
         name: " Aradhya Singh",
-        designation: "Experience Manager",
+        designation: "Vice-President",
         imageURL: "/teamImages/Aradhya.jpg",
         GitHub: "https://github.com/optimizer-aa",
         LinkedIn: "https://www.linkedin.com/in/aradhya-singh-7993751a8",
@@ -17,7 +17,7 @@ export const EngagementData = [{
     },
     {
         name: "Divyaansh Jain",
-        designation: "Relationship Manager",
+        designation: "General Secretary",
         imageURL: "/teamImages/Divyaansh.jpg",
         GitHub: "https://github.com/Divyaansh313",
         LinkedIn: "https://www.linkedin.com/in/divyaanshjain",
