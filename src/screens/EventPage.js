@@ -12,7 +12,7 @@ function EventPage() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          margin: "4rem",
+          margin: "2rem",
           flexWrap: "wrap",
         }}
       >
