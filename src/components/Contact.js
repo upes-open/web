@@ -11,7 +11,8 @@ import {
 
 import Map from "../components/Map";
 import { ReactElement } from "react";
-import { FaLinkedin, FaMailBulk, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import {FiMail} from "react-icons/fi";
 
 interface FeatureProps {
   text: string;
@@ -49,20 +50,23 @@ export default function Contact() {
           </Text>
           <Stack>
             <Feature
-              icon={<Icon as={FaMailBulk} color={"yellow.500"} w={5} h={5} />}
+              icon={<Icon as={FiMail} color={"yellow.500"} w={5} h={5} />}
               iconBg={useColorModeValue("yellow.100", "yellow.900")}
               text={"upesopen@gmail.com"}
             />
-            <Feature
+            <a href={'https://www.linkedin.com/company/open-community/mycompany/'}>
+            <Feature 
               icon={<Icon as={FaLinkedin} color={"green.500"} w={5} h={5} />}
               iconBg={useColorModeValue("green.100", "green.900")}
               text={"/open-community"}
-            />
+              
+            /></a>
+            <a href={'https://twitter.com/UpesOpen'}>
             <Feature
               icon={<Icon as={FaTwitter} color={"purple.500"} w={5} h={5} />}
               iconBg={useColorModeValue("purple.100", "purple.900")}
               text={"/UpesOpen"}
-            />
+            /></a>
           </Stack>
         </Stack>
         <Map />
