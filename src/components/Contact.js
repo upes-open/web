@@ -67,8 +67,8 @@ import {
                 iconBg={useColorModeValue("purple.100", "purple.900")}
                 text={"/UpesOpen"}
               /></a>
-           
             </Stack>
+          </Stack>
           <Map />
         </SimpleGrid>
       </Container>
