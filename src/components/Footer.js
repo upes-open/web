@@ -83,7 +83,7 @@ export default function Footer() {
           align={{ base: 'center', md: 'center' }}>
           <Text>© 2021 Open Community. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Slack'} href={'https://join.slack.com/share/zt-vcveekky-fethB5jgwXtjayYQvqjBtQ'}>
+          <SocialButton label={'Slack'} href={'https://upes-open.slack.com/archives/C02DF8XMU7M'}>
               <FaSlack />
             </SocialButton>
             <SocialButton label={'Twitter'} href={'https://twitter.com/UpesOpen'}>
