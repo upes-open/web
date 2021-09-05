@@ -10,7 +10,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import { FaSlack, FaInstagram, FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
 const Logo = (props: any) => {
   return (
@@ -83,6 +83,9 @@ export default function Footer() {
           align={{ base: 'center', md: 'center' }}>
           <Text>© 2021 Open Community. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
+          <SocialButton label={'Slack'} href={'https://join.slack.com/share/zt-vcveekky-fethB5jgwXtjayYQvqjBtQ'}>
+              <FaSlack />
+            </SocialButton>
             <SocialButton label={'Twitter'} href={'https://twitter.com/UpesOpen'}>
               <FaTwitter />
             </SocialButton>
