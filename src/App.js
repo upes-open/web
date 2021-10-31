@@ -5,20 +5,22 @@ import TeamPage from "./screens/TeamPage";
 import AboutPage from "./screens/AboutPage";
 import ContactPage from "./screens/ContactPage";
 import EventPage from "./screens/EventPage";
+import AuthenticationPage from "./screens/AuthenticationPage";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/' exact component={HomePage} />
-        <Route path='/projects' component={Projects} />
-        <Route path='/team' component={TeamPage} />
-        <Route path='/about' component={AboutPage} />
-        <Route path='/contact' component={ContactPage} />
-        <Route path='/events' component={EventPage} />
+        <Route path="/" exact component={HomePage} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/team" component={TeamPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/contact" component={ContactPage} />
+        <Route path="/events" component={EventPage} />
+        <Route path="/authenticate" component={AuthenticationPage} />
       </Switch>
     </Router>
   );
-} 
+}
 
 export default App;
