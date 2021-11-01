@@ -6,6 +6,7 @@ import AboutPage from "./screens/AboutPage";
 import ContactPage from "./screens/ContactPage";
 import EventPage from "./screens/EventPage";
 import AuthenticationPage from "./screens/AuthenticationPage";
+import CreateEvents from "./screens/CreateEvent";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" component={ContactPage} />
         <Route path="/events" component={EventPage} />
         <Route path="/authenticate" component={AuthenticationPage} />
+        <Route path="/CreateEvents" component={CreateEvents} />
       </Switch>
     </Router>
   );
