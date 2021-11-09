@@ -14,16 +14,15 @@ import { useForm } from "react-hook-form";
 
 export default function AuthenticationLogin() {
   const toast = useToast();
-
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
     if (data.privatekey === "private key") {
-      window.location.href = "/";
+      sessionStorage.setItem("lastname", data.privatekey);
+      window.location.href = "/CreateEvents";
     } else {
       toast({
         title: "Incorrect Key!",
@@ -47,8 +46,6 @@ export default function AuthenticationLogin() {
       >
         <Box p={2} my={4}>
           <Image
-            // h={"397"}
-            // w={"580"}
             h={"342"}
             w={"500"}
             src="https://raw.githubusercontent.com/upes-open/web/dev/src/assets/authentication.png"
