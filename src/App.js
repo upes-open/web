@@ -21,7 +21,7 @@ function App() {
         <Route path="/events" component={EventPage} />
         <Route path="/authenticate" component={AuthenticationPage} />
         <Route path="/CreateEvents" component={CreateEvents} />
-        <Route path="/404" component={Page404} />
+        <Route path="*" component={Page404} />
       </Switch>
     </Router>
   );
