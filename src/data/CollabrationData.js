@@ -45,4 +45,11 @@ export const CollabrationData = [{
         imageURL: "/teamImages/collab/Khusbhoo.jpeg",
         LinkedIn: "https://www.linkedin.com/in/khushboo-jakhmola-a94406190",
     },
-];
+    {
+        name: "Yash Patel",
+        designation: "Student Developer",
+        imageURL: "/teamImages/collab/Yash.jpeg",
+        LinkedIn: "https://www.linkedin.com/in/yashpatel2104/",
+        Twitter: "https://twitter.com/yashpatel_py",
+    }
+]
