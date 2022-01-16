@@ -64,7 +64,7 @@ export default function Cards() {
   return (
     /* box of color green */
     <>
-      <Container maxW="80vw" centerContent>
+      <Container maxW="80vw" centerContent py={8}>
         <SimpleGrid columns={[1, null, 2]} spacing={20}>
           {EventsData.map((data) => (
             <Box
