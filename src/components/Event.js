@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Text, Stack } from "@chakra-ui/react";
+import { Box, Container, Heading, Stack } from "@chakra-ui/react";
 
 export default function Event() {
   return (
@@ -12,12 +12,12 @@ export default function Event() {
         >
           Open Event
         </Heading>
-        <Text color={"gray.600"} fontSize={"xl"}>
+        {/* <Text color={"gray.600"} fontSize={"xl"}>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum.
-        </Text>
+        </Text> */}
       </Stack>
     </Box>
   );

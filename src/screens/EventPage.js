@@ -1,23 +1,14 @@
 import NavBar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Event from "../components/Event";
 import Cards from "../components/Cards";
-/* import Card from '../components/Card';
- */
-/* import maintain from "../assets/maintain.svg";
-import { Heading } from "@chakra-ui/react"; */
+import Footer from "../components/Footer";
 
 function EventPage() {
   return (
     <div>
       <NavBar />
       <Event />
-      <div><conatiner>
-          <Cards />
-          <Cards /> 
-      </conatiner></div>
-     
-      {/* <FetchProjects /> */}
+      <Cards />
       <Footer />
     </div>
   );
