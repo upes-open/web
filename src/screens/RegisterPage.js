@@ -18,7 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 
-// TODO: api codes
+//  TODO: api codes
 
 export default function RegisterPage() {
   //
