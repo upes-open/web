@@ -64,10 +64,17 @@ export const TeamData = [
     },
     {
         name: "Sarthak Tiwari",
-        designation: "Design & Website Lead",
+        designation: "Design Lead",
         imageURL: "https://media-exp1.licdn.com/dms/image/C4D03AQGaQtq0Ej-U6A/profile-displayphoto-shrink_800_800/0/1629691331141?e=1653523200&v=beta&t=prseGQSfiYkHKsp7USCuHvQMtTiMu4NWvZ1-6i-7PsA",
         LinkedIn: "https://www.linkedin.com/in/sarthak-tiwari-0398071b9/",
         GitHub: "https://github.com/sarthackk",
+    },
+    {
+        name: "Aditya Punetha",
+        designation: "Website Lead",
+        imageURL: "https://media-exp1.licdn.com/dms/image/C5603AQGkBq6MZRnelA/profile-displayphoto-shrink_400_400/0/1601452227513?e=1653523200&v=beta&t=ybw0u7luND9ee34EzFdkp7VFvci8Mi6OgXMXIaneggo",
+        LinkedIn: "https://www.linkedin.com/in/aditya-punetha/",
+        GitHub: "https://github.com/AdityaPunetha",
     },
     {
         name: "Keshav Garg",
