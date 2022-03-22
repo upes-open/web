@@ -1,3 +1,4 @@
+//Collaboration Vertical
 import {
   Heading,
   Avatar,
@@ -8,9 +9,9 @@ import {
   Flex,
   Container,
 } from "@chakra-ui/react";
-import { FacultyData } from "../data/FacultyData";
+import { CollaborationData } from "../data/CollaborationData";
 
-export default function FacultyCard() {
+export default function CollaborationCard() {
   return (
     <Container maxW="80rem" centerContent>
       <Heading
@@ -20,10 +21,10 @@ export default function FacultyCard() {
         color={"green"}
         margin={6}
       >
-        Faculty Coordinators
+        
       </Heading>
       <Flex flexWrap={"wrap"} justifyContent={"center"}>
-        {FacultyData.map((data) => (
+        {CollaborationData.map((data) => (
           <Box
             maxW={"320px"}
             margin={3}
@@ -36,7 +37,7 @@ export default function FacultyCard() {
             <Avatar
               size={"xl"}
               src={data.imageURL}
-              //alt={"Avatar Alt"}
+              alt={"Avatar Alt"}
               mb={4}
               pos={"relative"}
               _after={{
@@ -76,6 +77,26 @@ export default function FacultyCard() {
               >
                 <a href={data.LinkedIn} target="blank">
                   LinkedIn
+                </a>
+              </Button>
+              <Button
+                flex={1}
+                fontSize={"sm"}
+                rounded={"full"}
+                bg={"green.400"}
+                color={"white"}
+                boxShadow={
+                  "0px 1px 25px -5px rgb(80 200 120 / 48%), 0 10px 10px -5px rgb(80 200 120 / 43%)"
+                }
+                _hover={{
+                  bg: "green.500",
+                }}
+                _focus={{
+                  bg: "green.500",
+                }}
+              >
+                <a href={data.Twitter} target="blank">
+                  Twitter
                 </a>
               </Button>
             </Stack>

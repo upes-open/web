@@ -8,9 +8,9 @@ import {
   Flex,
   Container,
 } from "@chakra-ui/react";
-import { CollabrationData } from "../data/CollabrationData";
+import { AlumniData } from "../data/AlumniData";
 
-export default function CollabrationCard() {
+export default function AlumniCard() {
   return (
     <Container maxW="80rem" centerContent>
       <Heading
@@ -20,10 +20,10 @@ export default function CollabrationCard() {
         color={"green"}
         margin={6}
       >
-        Collabration Vertical
+        Alumni
       </Heading>
       <Flex flexWrap={"wrap"} justifyContent={"center"}>
-        {CollabrationData.map((data) => (
+        {AlumniData.map((data) => (
           <Box
             maxW={"320px"}
             margin={3}
@@ -76,26 +76,6 @@ export default function CollabrationCard() {
               >
                 <a href={data.LinkedIn} target="blank">
                   LinkedIn
-                </a>
-              </Button>
-              <Button
-                flex={1}
-                fontSize={"sm"}
-                rounded={"full"}
-                bg={"green.400"}
-                color={"white"}
-                boxShadow={
-                  "0px 1px 25px -5px rgb(80 200 120 / 48%), 0 10px 10px -5px rgb(80 200 120 / 43%)"
-                }
-                _hover={{
-                  bg: "green.500",
-                }}
-                _focus={{
-                  bg: "green.500",
-                }}
-              >
-                <a href={data.Twitter} target="blank">
-                  Twitter
                 </a>
               </Button>
             </Stack>

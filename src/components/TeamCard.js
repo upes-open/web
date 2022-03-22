@@ -8,9 +8,9 @@ import {
   Flex,
   Container,
 } from "@chakra-ui/react";
-import { EngagementData } from "../data/EngagementData";
+import { TeamData } from "../data/TeamData";
 
-export default function EngagementCard() {
+export default function TeamCard() {
   return (
     <Container maxW="80rem" centerContent>
       <Heading
@@ -20,10 +20,10 @@ export default function EngagementCard() {
         color={"green"}
         margin={6}
       >
-        Engagement Vertical
+        Team Leads 2022
       </Heading>
       <Flex flexWrap={"wrap"} justifyContent={"center"}>
-        {EngagementData.map((data) => (
+        {TeamData.map((data) => (
           <Box
             maxW={"320px"}
             margin={3}
@@ -95,8 +95,8 @@ export default function EngagementCard() {
                   bg: "green.500",
                 }}
               >
-                <a href={data.Twitter} target="blank">
-                  Twitter
+                <a href={data.GitHub} target="blank">
+                  GitHub
                 </a>
               </Button>
             </Stack>
