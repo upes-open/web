@@ -73,6 +73,7 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem to="/">Home</MenuItem>
         <MenuItem to="/events">Events </MenuItem>
         <MenuItem to="/projects">Projects </MenuItem>
+        <MenuItem to="/team">Team</MenuItem>
         <MenuItem to="https://github.com/upes-open/first-contributions" isLast>
           <Button
             size="sm"

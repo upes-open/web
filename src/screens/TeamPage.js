@@ -1,17 +1,18 @@
 import React from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/Navbar";
-import EngagementCard from "../components/EngagementCard";
+import TeamCard from "../components/TeamCard";
 import FacultyCard from "../components/FacultyCard";
-import CollabrationCard from "../components/CollabrationCard";
-
+import CollaborationCard from "../components/CollaborationCard";
+import AlumniCard from "../components/AlumniCard";
 const TeamPage = () => {
   return (
     <div>
       <NavBar />
       <FacultyCard />
-      <EngagementCard />
-      <CollabrationCard />
+      <TeamCard />
+      <CollaborationCard />
+      <AlumniCard />
       <Footer />
     </div>
   );
