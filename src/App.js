@@ -19,7 +19,7 @@ function App() {
         <Route path="/contact" component={ContactPage} />
         <Route path="/events" component={EventPage} />
         <Route path="/RegisterPage" component={RegisterPage} />
-        <Route path="*" component={Page404} />
+        {/* <Route path="*" component={Page404} /> */}
       </Switch>
     </Router>
   );
