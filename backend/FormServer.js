@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
+const serverless = require("serverless-http");
 
 require("./utils/Connection");
 
@@ -79,3 +80,5 @@ router.post("/form", (req, res) => {
 
   res.sendStatus(savestatus);
 });
+
+module.exports.handler = serverless(app);
