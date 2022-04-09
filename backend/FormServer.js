@@ -1,7 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
-const serverless = require("serverless-http");
 
 require("./utils/Connection");
 
@@ -12,24 +11,15 @@ dotenv.config({ path: "./config.env" });
 //
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors({ origin: "*" }));
 const router = express.Router();
-app.use("/.netlify/functions", router);
+app.use("/backend/functions", router);
 
 //
 const FormData = require("./utils/Schema");
 const { application } = require("express");
-
-const testData = new FormData({
-  name: "test",
-  SAP_ID: 123,
-  E_Mail: "assdx",
-  Contact_Number: 1223,
-  Course: "test",
-  year: 123,
-});
 
 //
 router.get("/", (req, res) => {
@@ -42,18 +32,6 @@ router.get("/hello", (req, res) => {
 
 application.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
-});
-
-router.get("/test", (req, res) => {
-  savestatus = 200;
-  testData.save(function (err) {
-    if (err.code === 11000) {
-      console.log("Duplicate form");
-      savestatus = 999;
-    }
-    // saved!
-  });
-  res.sendStatus(savestatus);
 });
 
 router.get("/viewAll", (req, res) => {
@@ -80,5 +58,3 @@ router.post("/form", (req, res) => {
 
   res.sendStatus(savestatus);
 });
-
-module.exports.handler = serverless(app);
