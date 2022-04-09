@@ -12,7 +12,11 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
     "framer-motion": "^4.1.17",
+    "mongoose": "^6.2.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.27.1",
@@ -47,6 +51,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.0"
+    "gh-pages": "^3.2.0",
+    "nodemon": "^2.0.15"
   }
 }
