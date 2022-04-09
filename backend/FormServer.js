@@ -14,9 +14,12 @@ const app = express();
 const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors({ origin: "*" }));
+const router = express.Router();
+app.use("/.netlify/functions", router);
 
 //
 const FormData = require("./utils/Schema");
+const { application } = require("express");
 
 const testData = new FormData({
   name: "test",
@@ -28,19 +31,19 @@ const testData = new FormData({
 });
 
 //
-app.get("/", (req, res) => {
+router.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/.netlify/functions/hello", (req, res) => {
+router.get("/hello", (req, res) => {
   res.json({ message: "Hello from Netlify Functions!" });
 });
 
-app.listen(port, () => {
+application.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
-app.get("/test", (req, res) => {
+router.get("/test", (req, res) => {
   savestatus = 200;
   testData.save(function (err) {
     if (err.code === 11000) {
@@ -52,7 +55,7 @@ app.get("/test", (req, res) => {
   res.sendStatus(savestatus);
 });
 
-app.get("/viewAll", (req, res) => {
+router.get("/viewAll", (req, res) => {
   if (req.query.view_key == process.env.VIEW_KEY) {
     FormData.find().then((data) => {
       res.send(data);
@@ -62,7 +65,7 @@ app.get("/viewAll", (req, res) => {
   }
 });
 
-app.post("/form", (req, res) => {
+router.post("/form", (req, res) => {
   savestatus = 200;
   const formData = new FormData({
     name: req.body.name,
