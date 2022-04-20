@@ -28,17 +28,33 @@ export default function RegisterPage() {
     formState: { errors },
   } = useForm();
   const toast = useToast();
-  const onSubmit = (data) => {
-    console.log(data);
-    toast({
-      title: "Registered Successfully!",
-      status: "success",
-      duration: 3000,
-      isClosable: true,
+  const onSubmit = async (data) => {
+    const result = await fetch("http://localhost:5000/form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
     });
-    setTimeout(function () {
-      window.location.reload();
-    }, 1000);
+    console.log(result);
+    if (result.status === 200) {
+      toast({
+        title: "Registered Successfully!",
+        status: "success",
+        duration: 3000,
+        isClosable: true,
+      });
+      setTimeout(function () {
+        window.location.reload();
+      }, 1000);
+    } else {
+      toast({
+        title: "Error!",
+        status: "error",
+        duration: 3000,
+        isClosable: true,
+      });
+    }
   };
   //
   return (
@@ -46,9 +62,9 @@ export default function RegisterPage() {
       <NavBar />
       <Flex width="full" align="center" justifyContent="center">
         <Box
-          p={8}
+          p={{ sm: "0", md: "8" }}
           my={5}
-          minWidth="560px"
+          minWidth={{ base: "0px", sm: "0px", md: "560px" }}
           borderWidth={1}
           borderRadius={8}
           boxShadow="lg"
@@ -57,7 +73,7 @@ export default function RegisterPage() {
             <Heading>Register</Heading>
           </Box>
           <Box my={4} textAlign="left">
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} method="POST">
               <FormControl isInvalid={errors.name}>
                 <FormLabel>Name</FormLabel>
                 <Input
