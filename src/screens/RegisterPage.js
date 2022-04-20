@@ -29,7 +29,7 @@ export default function RegisterPage() {
   } = useForm();
   const toast = useToast();
   const onSubmit = async (data) => {
-    const result = await fetch("http://localhost:5000/form", {
+    const result = await fetch("https://upes-web-backend.herokuapp.com/backend/functions/form", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
