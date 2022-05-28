@@ -119,12 +119,12 @@ export const TeamData = [
     GitHub: "https://github.com/DhruvLamba",
   },
   {
-    name: "Divij Chaudhari",
+    name: "Pawan Bajaj",
     designation: "Lead Student Developer",
     imageURL:
       "https://media-exp1.licdn.com/dms/image/C4E03AQHpEcNQSafLqw/profile-displayphoto-shrink_800_800/0/1626580670698?e=2147483647&v=beta&t=Ef_sj9sMm8rMqOHB2QHWLvypai9vBw0ft6tG5CJukJk",
-    LinkedIn: "https://www.linkedin.com/in/divijchaudhari",
-    GitHub: "https://github.com/DivijChaudhari",
+    LinkedIn: "https://www.linkedin.com/in/pawan-bajaj-7420121b8",
+    GitHub: "https://github.com/pavvann",
   },
   {
     name: "Ashutosh Kapoor",
