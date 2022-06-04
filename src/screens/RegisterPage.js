@@ -19,6 +19,7 @@ import {
   InputLeftAddon,
   Checkbox,
   CheckboxGroup,
+  setProjects,
   Stack,
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
@@ -109,6 +110,23 @@ export default function RegisterPage() {
                     {errors.college_name.message}
                   </FormErrorMessage>
                 )}
+                {/* INPUT field to upload id card */}
+                <FormControl my={2} mx={2} isInvalid={errors.upload_id}>
+                  <FormLabel>Upload Id card</FormLabel>
+                  <Input
+                    type="file"
+                    name="upload"
+                    accept="application/pdf"
+                    {...register("upload_id", {
+                      required: "Please Upload Your Id card in PDF format only",
+                    })}
+                  />
+                  {errors.upload_id && (
+                    <FormErrorMessage>
+                      {errors.upload_id.message}
+                    </FormErrorMessage>
+                  )}
+                </FormControl>
               </FormControl>
               <FormControl my={2} mx={2} isInvalid={errors.Roll_No}>
                 <FormLabel>Roll No</FormLabel>
@@ -204,6 +222,7 @@ export default function RegisterPage() {
                   <FormErrorMessage>{errors.GitHub.message}</FormErrorMessage>
                 )}
               </FormControl>
+
               <FormControl my={2} mx={2} isInvalid={errors.LinkedIn}>
                 <FormLabel>LinkedIn ID</FormLabel>
                 <InputGroup>
@@ -237,8 +256,10 @@ export default function RegisterPage() {
                   <FormErrorMessage>{errors.year.message}</FormErrorMessage>
                 )}
               </FormControl>
+
               <FormControl my={2} mx={2} isInvalid={errors.Projects}>
                 <FormLabel>Projects</FormLabel>
+
                 <CheckboxGroup
                   // minimum 1 selected maximum 3
                   name="Projects"
@@ -256,14 +277,14 @@ export default function RegisterPage() {
                   })}
                   colorScheme="green"
                   onChange={(e) => {
-                    // setProjects(e.target.value);
+                    setProjects(e.target.value);
                   }}
                 >
-                  {/* <Stack spacing={[2, 3]} direction={["row", "column"]}>
-                    <Checkbox value="first">first</Checkbox>
-                    <Checkbox value="sec">sec</Checkbox>
-                    <Checkbox value="third">third</Checkbox>
-                  </Stack> */}
+                  <Stack spacing={[2, 3]} direction={["row", "column"]}>
+                    <Checkbox value="first">Project-1</Checkbox>
+                    <Checkbox value="sec">Project-2</Checkbox>
+                    <Checkbox value="third">Project-3</Checkbox>
+                  </Stack>
                 </CheckboxGroup>
                 {errors.Projects && (
                   <FormErrorMessage>{errors.Projects.message}</FormErrorMessage>
