@@ -277,13 +277,17 @@ export default function RegisterPage() {
                   })}
                   colorScheme="green"
                   onChange={(e) => {
-                    setProjects(e.target.value);
+                    // setProjects(e.target.value);
                   }}
                 >
-                  <Stack spacing={[2, 3]} direction={["row", "column"]}>
-                    <Checkbox value="first">Project-1</Checkbox>
-                    <Checkbox value="sec">Project-2</Checkbox>
-                    <Checkbox value="third">Project-3</Checkbox>
+                  <Stack spacing={[2, 5]} direction={["row", "column"]}>
+                    <Checkbox value="first">Medical-Analysis-Application-Using-ML</Checkbox>
+                    <Checkbox value="sec">Sports-App</Checkbox>
+                    <Checkbox value="third">P2P-Carpooling-DAPP</Checkbox>
+                    <Checkbox value="forth">File-Storage-Using-Hybrid-Cryptography</Checkbox>
+                    <Checkbox value="fifth">Crime-Analysis-and-Prediction</Checkbox>
+                    <Checkbox value="six">UPESiteOrNot</Checkbox>
+                    <Checkbox value="seven">Parking Token</Checkbox>
                   </Stack>
                 </CheckboxGroup>
                 {errors.Projects && (
