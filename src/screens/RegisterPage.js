@@ -19,10 +19,9 @@ import {
   InputLeftAddon,
   Checkbox,
   CheckboxGroup,
-  setProjects,
   Stack,
 } from "@chakra-ui/react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 
 //  TODO: api codes
 
@@ -30,6 +29,7 @@ export default function RegisterPage() {
   //
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors },
   } = useForm();
@@ -54,7 +54,7 @@ export default function RegisterPage() {
         isClosable: true,
       });
       setTimeout(function () {
-        window.location.reload();
+        // window.location.reload();
       }, 1000);
     } else {
       toast({
@@ -113,7 +113,7 @@ export default function RegisterPage() {
                 {/* INPUT field to upload id card */}
                 <FormControl my={2} mx={2} isInvalid={errors.upload_id}>
                   <FormLabel>Upload Id card</FormLabel>
-                  <Input
+                  <input
                     type="file"
                     name="upload"
                     accept="application/pdf"
@@ -130,15 +130,13 @@ export default function RegisterPage() {
               </FormControl>
               <FormControl my={2} mx={2} isInvalid={errors.Roll_No}>
                 <FormLabel>Roll No</FormLabel>
-                <NumberInput>
-                  <NumberInputField
-                    type="text"
-                    placeholder="Roll No"
-                    {...register("Roll_No", {
-                      required: "Please enter your Roll No",
-                    })}
-                  />
-                </NumberInput>
+                <Input
+                  type="text"
+                  placeholder="Roll No"
+                  {...register("Roll_No", {
+                    required: "Please enter your Roll No",
+                  })}
+                />
                 {errors.Roll_No && (
                   <FormErrorMessage>{errors.Roll_No.message}</FormErrorMessage>
                 )}
@@ -257,41 +255,44 @@ export default function RegisterPage() {
                 )}
               </FormControl>
 
-              <FormControl my={2} mx={2} isInvalid={errors.Projects}>
-                <FormLabel>Projects</FormLabel>
-
-                <CheckboxGroup
-                  // minimum 1 selected maximum 3
-                  name="Projects"
-                  options={[
-                    { label: "Project 1", value: "Project 1" },
-                    { label: "Project 2", value: "Project 2" },
-                    { label: "Project 3", value: "Project 3" },
-                  ]}
-                  {...register("Projects", {
-                    required: "Please select atleast 1 Project",
-                    validate: (value) =>
-                      value.length >= 1 && value.length <= 3
-                        ? undefined
-                        : "Please select atleast 1 Project",
-                  })}
-                  colorScheme="green"
-                  onChange={(e) => {
-                    // setProjects(e.target.value);
+              <FormControl my={2} mx={2} isInvalid={errors.projects}>
+                <FormLabel>Projects ( Max: 3 )</FormLabel>
+                <Controller
+                  name="projects"
+                  control={control}
+                  render={({ field: { ref, ...rest } }) => (
+                    <Stack spacing={[2, 2]} direction={"column"}>
+                      <CheckboxGroup {...rest}>
+                        <Checkbox value="first">
+                          Medical-Analysis-Application-Using-ML
+                        </Checkbox>
+                        <Checkbox value="sec">Sports-App</Checkbox>
+                        <Checkbox value="third">P2P-Carpooling-DAPP</Checkbox>
+                        <Checkbox value="forth">
+                          File-Storage-Using-Hybrid-Cryptography
+                        </Checkbox>
+                        <Checkbox value="fifth">
+                          Crime-Analysis-and-Prediction
+                        </Checkbox>
+                        <Checkbox value="six">UPESiteOrNot</Checkbox>
+                        <Checkbox value="seven">Parking Token</Checkbox>
+                      </CheckboxGroup>
+                    </Stack>
+                  )}
+                  rules={{
+                    validate: (value) => {
+                      if (value.length > 3) {
+                        return "Max 3 projects can be selected";
+                      }
+                    },
+                    required: {
+                      value: true,
+                      message: "Please select at least one",
+                    },
                   }}
-                >
-                  <Stack spacing={[2, 5]} direction={["row", "column"]}>
-                    <Checkbox value="first">Medical-Analysis-Application-Using-ML</Checkbox>
-                    <Checkbox value="sec">Sports-App</Checkbox>
-                    <Checkbox value="third">P2P-Carpooling-DAPP</Checkbox>
-                    <Checkbox value="forth">File-Storage-Using-Hybrid-Cryptography</Checkbox>
-                    <Checkbox value="fifth">Crime-Analysis-and-Prediction</Checkbox>
-                    <Checkbox value="six">UPESiteOrNot</Checkbox>
-                    <Checkbox value="seven">Parking Token</Checkbox>
-                  </Stack>
-                </CheckboxGroup>
-                {errors.Projects && (
-                  <FormErrorMessage>{errors.Projects.message}</FormErrorMessage>
+                />
+                {errors.projects && (
+                  <FormErrorMessage>{errors.projects.message}</FormErrorMessage>
                 )}
               </FormControl>
 
