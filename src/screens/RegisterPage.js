@@ -54,7 +54,7 @@ export default function RegisterPage() {
         isClosable: true,
       });
       setTimeout(function () {
-        // window.location.reload();
+        window.location.reload();
       }, 1000);
     } else {
       toast({
@@ -111,22 +111,6 @@ export default function RegisterPage() {
                   </FormErrorMessage>
                 )}
                 {/* INPUT field to upload id card */}
-                <FormControl my={2} mx={2} isInvalid={errors.upload_id}>
-                  <FormLabel>Upload Id card</FormLabel>
-                  <input
-                    type="file"
-                    name="upload"
-                    accept="application/pdf"
-                    {...register("upload_id", {
-                      required: "Please Upload Your Id card in PDF format only",
-                    })}
-                  />
-                  {errors.upload_id && (
-                    <FormErrorMessage>
-                      {errors.upload_id.message}
-                    </FormErrorMessage>
-                  )}
-                </FormControl>
               </FormControl>
               <FormControl my={2} mx={2} isInvalid={errors.Roll_No}>
                 <FormLabel>Roll No</FormLabel>
@@ -139,6 +123,22 @@ export default function RegisterPage() {
                 />
                 {errors.Roll_No && (
                   <FormErrorMessage>{errors.Roll_No.message}</FormErrorMessage>
+                )}
+              </FormControl>
+              <FormControl my={2} mx={2} isInvalid={errors.upload_id}>
+                <FormLabel>Upload Id card</FormLabel>
+                <input
+                  type="file"
+                  name="upload"
+                  accept="application/pdf"
+                  {...register("upload_id", {
+                    required: "Please Upload Your Id card in PDF format only",
+                  })}
+                />
+                {errors.upload_id && (
+                  <FormErrorMessage>
+                    {errors.upload_id.message}
+                  </FormErrorMessage>
                 )}
               </FormControl>
               <FormControl my={2} mx={2} isInvalid={errors.SAP_ID}>
