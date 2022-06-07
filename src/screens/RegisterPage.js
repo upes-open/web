@@ -125,7 +125,7 @@ export default function RegisterPage() {
                   <FormErrorMessage>{errors.Roll_No.message}</FormErrorMessage>
                 )}
               </FormControl>
-              <FormControl my={2} mx={2} isInvalid={errors.upload_id}>
+              {/* <FormControl my={2} mx={2} isInvalid={errors.upload_id}>
                 <FormLabel>Upload Id card</FormLabel>
                 <input
                   type="file"
@@ -140,7 +140,7 @@ export default function RegisterPage() {
                     {errors.upload_id.message}
                   </FormErrorMessage>
                 )}
-              </FormControl>
+              </FormControl> */}
               <FormControl my={2} mx={2} isInvalid={errors.SAP_ID}>
                 <FormLabel>SAP ID</FormLabel>
                 <NumberInput>
