@@ -21,7 +21,7 @@ import {
   CheckboxGroup,
   Stack,
 } from "@chakra-ui/react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 
 //  TODO: api codes
 
@@ -29,6 +29,7 @@ export default function RegisterPage() {
   //
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors },
   } = useForm();
@@ -109,22 +110,37 @@ export default function RegisterPage() {
                     {errors.college_name.message}
                   </FormErrorMessage>
                 )}
+                {/* INPUT field to upload id card */}
               </FormControl>
               <FormControl my={2} mx={2} isInvalid={errors.Roll_No}>
                 <FormLabel>Roll No</FormLabel>
-                <NumberInput>
-                  <NumberInputField
-                    type="text"
-                    placeholder="Roll No"
-                    {...register("Roll_No", {
-                      required: "Please enter your Roll No",
-                    })}
-                  />
-                </NumberInput>
+                <Input
+                  type="text"
+                  placeholder="Roll No"
+                  {...register("Roll_No", {
+                    required: "Please enter your Roll No",
+                  })}
+                />
                 {errors.Roll_No && (
                   <FormErrorMessage>{errors.Roll_No.message}</FormErrorMessage>
                 )}
               </FormControl>
+              {/* <FormControl my={2} mx={2} isInvalid={errors.upload_id}>
+                <FormLabel>Upload Id card</FormLabel>
+                <input
+                  type="file"
+                  name="upload"
+                  accept="application/pdf"
+                  {...register("upload_id", {
+                    required: "Please Upload Your Id card in PDF format only",
+                  })}
+                />
+                {errors.upload_id && (
+                  <FormErrorMessage>
+                    {errors.upload_id.message}
+                  </FormErrorMessage>
+                )}
+              </FormControl> */}
               <FormControl my={2} mx={2} isInvalid={errors.SAP_ID}>
                 <FormLabel>SAP ID</FormLabel>
                 <NumberInput>
@@ -204,6 +220,7 @@ export default function RegisterPage() {
                   <FormErrorMessage>{errors.GitHub.message}</FormErrorMessage>
                 )}
               </FormControl>
+
               <FormControl my={2} mx={2} isInvalid={errors.LinkedIn}>
                 <FormLabel>LinkedIn ID</FormLabel>
                 <InputGroup>
@@ -237,36 +254,52 @@ export default function RegisterPage() {
                   <FormErrorMessage>{errors.year.message}</FormErrorMessage>
                 )}
               </FormControl>
-              <FormControl my={2} mx={2} isInvalid={errors.Projects}>
-                <FormLabel>Projects</FormLabel>
-                <CheckboxGroup
-                  // minimum 1 selected maximum 3
-                  name="Projects"
-                  options={[
-                    { label: "Project 1", value: "Project 1" },
-                    { label: "Project 2", value: "Project 2" },
-                    { label: "Project 3", value: "Project 3" },
-                  ]}
-                  {...register("Projects", {
-                    required: "Please select atleast 1 Project",
-                    validate: (value) =>
-                      value.length >= 1 && value.length <= 3
-                        ? undefined
-                        : "Please select atleast 1 Project",
-                  })}
-                  colorScheme="green"
-                  onChange={(e) => {
-                    // setProjects(e.target.value);
+
+              <FormControl my={2} mx={2} isInvalid={errors.projects}>
+                <FormLabel>Projects ( Max: 3 )</FormLabel>
+                <Controller
+                  name="projects"
+                  control={control}
+                  render={({ field: { ref, ...rest } }) => (
+                    <Stack spacing={[2, 2]} direction={"column"}>
+                      <CheckboxGroup {...rest}>
+                        <Checkbox value="Medical">
+                          Medical Analysis Application Using ML
+                        </Checkbox>
+                        <Checkbox value="Sports">Sports App</Checkbox>
+                        <Checkbox value="Carpooling">
+                          P2P Carpooling DAPP
+                        </Checkbox>
+                        <Checkbox value="Cryptography">
+                          File Storage Using Hybrid Cryptography
+                        </Checkbox>
+                        <Checkbox value="Crime">
+                          Crime Analysis and Prediction
+                        </Checkbox>
+                        <Checkbox value="UPESiteOrNot">UPESiteOrNot</Checkbox>
+                        <Checkbox value="Parking">
+                          Automated Parking System{" "}
+                        </Checkbox>
+                        <Checkbox value="Product">
+                          Product Verification DAPP
+                        </Checkbox>
+                      </CheckboxGroup>
+                    </Stack>
+                  )}
+                  rules={{
+                    validate: (value) => {
+                      if (value.length > 3) {
+                        return "Max 3 projects can be selected";
+                      }
+                    },
+                    required: {
+                      value: true,
+                      message: "Please select at least one",
+                    },
                   }}
-                >
-                  {/* <Stack spacing={[2, 3]} direction={["row", "column"]}>
-                    <Checkbox value="first">first</Checkbox>
-                    <Checkbox value="sec">sec</Checkbox>
-                    <Checkbox value="third">third</Checkbox>
-                  </Stack> */}
-                </CheckboxGroup>
-                {errors.Projects && (
-                  <FormErrorMessage>{errors.Projects.message}</FormErrorMessage>
+                />
+                {errors.projects && (
+                  <FormErrorMessage>{errors.projects.message}</FormErrorMessage>
                 )}
               </FormControl>
 
