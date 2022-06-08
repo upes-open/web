@@ -78,6 +78,9 @@ export default function Cards() {
             >
               <Box h={"30vh"} mb={6}>
                 <Image
+                  maxW="100%"
+                  maxH="100%"
+                  objectFit="cover"
                   src={data.imageURL}
                   h={"full"}
                   w={"full"}

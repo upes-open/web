@@ -59,14 +59,23 @@ export const OSCProjectsData = [
       "Front end: React Native, JS Python-Flask for Backend Developemnt",
     url: "https://github.com/upes-open/OSC-File-Storage-Using-Hybrid-Cryptography",
   },
-  // {
-  //   name: "Parking Token",
-  //   description:
-  //     "https://media-exp1.licdn.com/dms/image/C4D03AQH2G7amKwGBMQ/profile-displayphoto-shrink_800_800/0/1647764805478?e=1653523200&v=beta&t=fnyA8Vocx1E-mvc9WbDq3-u-S6mkBFhlEu-Z6p9_bgo",
-
-  //   issues:
-  //     "https://media-exp1.licdn.com/dms/image/C4D03AQH2G7amKwGBMQ/profile-displayphoto-shrink_800_800/0/1647764805478?e=1653523200&v=beta&t=fnyA8Vocx1E-mvc9WbDq3-u-S6mkBFhlEu-Z6p9_bgo",
-  //   teck_stack: "https://linkedin.com/in/adarsh-shukla-222a92163",
-  //   url: "https://github.com/Ad1106",
-  // },
+  {
+    name: "Automated Parking System",
+    description:
+      "Open Summer Of Code Project in which we will generate tokens automatically for Car Parking.",
+    issues:
+      "https://media-exp1.licdn.com/dms/image/C4D03AQH2G7amKwGBMQ/profile-displayphoto-shrink_800_800/0/1647764805478?e=1653523200&v=beta&t=fnyA8Vocx1E-mvc9WbDq3-u-S6mkBFhlEu-Z6p9_bgo",
+    teck_stack:
+      "Front end: React Native, Flutter Backend: NodeJS, Python-Django/Flask Database: MySQL Algorithm ANPR: OpenCV, Pytesseract, NumPY, TensorFlow",
+    url: "https://github.com/upes-open/OSC-Automated-Parking_System",
+  },
+  {
+    name: "Product Verification DAPP",
+    description:
+      "DAPP that verifies product record using blockchain technology.",
+    issues: "-mvc9WbDq3-u-S6mkBFhlEu-Z6p9_bgo",
+    teck_stack:
+      "HTML CSS JavaScript (related libraries and dependencies) Solidity web3.js crypto.js",
+    url: "https://github.com/upes-open/OSC-Product-Verification-DAPP",
+  },
 ];

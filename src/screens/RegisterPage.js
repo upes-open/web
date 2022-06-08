@@ -263,19 +263,26 @@ export default function RegisterPage() {
                   render={({ field: { ref, ...rest } }) => (
                     <Stack spacing={[2, 2]} direction={"column"}>
                       <CheckboxGroup {...rest}>
-                        <Checkbox value="first">
-                          Medical-Analysis-Application-Using-ML
+                        <Checkbox value="Medical">
+                          Medical Analysis Application Using ML
                         </Checkbox>
-                        <Checkbox value="sec">Sports-App</Checkbox>
-                        <Checkbox value="third">P2P-Carpooling-DAPP</Checkbox>
-                        <Checkbox value="forth">
-                          File-Storage-Using-Hybrid-Cryptography
+                        <Checkbox value="Sports">Sports App</Checkbox>
+                        <Checkbox value="Carpooling">
+                          P2P Carpooling DAPP
                         </Checkbox>
-                        <Checkbox value="fifth">
-                          Crime-Analysis-and-Prediction
+                        <Checkbox value="Cryptography">
+                          File Storage Using Hybrid Cryptography
                         </Checkbox>
-                        <Checkbox value="six">UPESiteOrNot</Checkbox>
-                        <Checkbox value="seven">Parking Token</Checkbox>
+                        <Checkbox value="Crime">
+                          Crime Analysis and Prediction
+                        </Checkbox>
+                        <Checkbox value="UPESiteOrNot">UPESiteOrNot</Checkbox>
+                        <Checkbox value="Parking">
+                          Automated Parking System{" "}
+                        </Checkbox>
+                        <Checkbox value="Product">
+                          Product Verification DAPP
+                        </Checkbox>
                       </CheckboxGroup>
                     </Stack>
                   )}

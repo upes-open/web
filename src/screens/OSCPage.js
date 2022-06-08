@@ -48,6 +48,10 @@ export default function OSCPage() {
             Where students have opportunity to learn and grow through the open
             source community.
           </Text>
+          <Text px={3} align="center" py={3}>
+            The contributors will be judged based on the number of issues they
+            solved and their difficulty.
+          </Text>
         </Stack>
 
         <Wrap spacing={7} justify="center" py={2}>
@@ -71,9 +75,9 @@ export default function OSCPage() {
             </Button>
           </WrapItem>
         </Wrap>
-        <OSCStats />
-        <OSCProjectsCard />
       </Stack>
+      <OSCStats />
+      <OSCProjectsCard />
       <Footer />
     </div>
   );

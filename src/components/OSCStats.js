@@ -58,7 +58,7 @@ export default function OSCStats() {
         />
         <OSCStatsCard
           title={"Projects"}
-          stat={"7"}
+          stat={"8"}
           icon={<GoProject size={"3em"} />}
         />
         <OSCStatsCard
