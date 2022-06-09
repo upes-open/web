@@ -53,7 +53,7 @@ export default function OSCStats() {
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
         <OSCStatsCard
           title={"Starts from"}
-          stat={"15 / 5 / 2022"}
+          stat={"15 / 6 / 2022"}
           icon={<BsFillCalendarFill size={"3em"} />}
         />
         <OSCStatsCard
