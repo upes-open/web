@@ -56,35 +56,33 @@ export default function OSCPage() {
           <Heading as="h2" size="lg" marginBottom="1rem" my={3}>
             Rules and Rubrics:
           </Heading>
-          <a>Repositories will be visible after orientaton ceremony</a>
+          <Text>Repositories will be visible after orientaton ceremony</Text>
           <Text px={3} align="center" pb={3}>
-            <a>Difficulty:</a>
+            <Text>Difficulty:</Text>
             <ul>
               <li>
-                <a>Easy: </a>
-                <a>10 points</a>
+                <Text>Easy: 10 points</Text>
               </li>
               <li>
-                <a>Medium: </a>
-                <a>20 points</a>
+                <Text>Medium: 20 points</Text>
               </li>
               <li>
-                <a>Hard: </a>
-                <a>40 points</a>
+                <Text>Hard: 40 points</Text>
               </li>
               <li>
-                <a>Streak: </a>
-                <a>50 points</a>
+                <Text>Streak: 50 points</Text>
               </li>
             </ul>
           </Text>
-          <a>Bonus 30 points for first commit in the Repositories.</a>
-          <a>Star ⭐ and Fork the repository to earn bonus points.</a>
-          <a>Participation certificate will be given to all contributors.</a>
-          <a>
+          <Text>Bonus 30 points for first commit in the Repositories.</Text>
+          <Text>Star ⭐ and Fork the repository to earn bonus points.</Text>
+          <Text>
+            Participation certificate will be given to all contributors.
+          </Text>
+          <Text>
             Participating in fun events that will take place on every weekend
             where you can win extra points.
-          </a>
+          </Text>
           <br />
         </Stack>
 
