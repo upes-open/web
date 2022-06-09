@@ -72,7 +72,7 @@ export default function Footer() {
       >
         <Logo />
         <Stack direction={"row"} spacing={3}>
-          <Link href={"/web"}>Home</Link>
+          <Link href={"/"}>Home</Link>
           <Link href={"/projects"}>Projects</Link>
           <Link href={"/events"}>Events</Link>
           <Link href={"/team"}>Team</Link>
