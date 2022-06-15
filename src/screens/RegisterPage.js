@@ -307,11 +307,11 @@ export default function RegisterPage() {
                 width="full"
                 mt={4}
                 mx={2}
-                type="submit"
+//                 type="submit"
                 colorScheme={"green"}
                 bg={"green.400"}
               >
-                Register
+                Registeration Closed
               </Button>
             </form>
           </Box>
