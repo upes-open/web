@@ -88,11 +88,11 @@ export default function OSCPage() {
 
         <Wrap spacing={7} justify="center" py={2}>
           <WrapItem>
-            <Link to="/osc/register">
+//             <Link to="/osc/register">
               <Button bg="green.400" colorScheme="green">
-                Register
+                Registeration Closed
               </Button>
-            </Link>
+//             </Link>
           </WrapItem>
           <WrapItem>
             <Button
