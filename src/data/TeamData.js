@@ -40,14 +40,6 @@ export const TeamData = [
     GitHub: "https://github.com/vedantsaraf2002",
   },
   {
-    name: "Pranit Gupta",
-    designation: "Data Lead",
-    imageURL:
-      "https://media-exp1.licdn.com/dms/image/C5603AQHk6yYQLb7FLg/profile-displayphoto-shrink_800_800/0/1606287528349?e=1653523200&v=beta&t=-XPzlsxp3y7rPslpR4Jirwjo13u_nLEVyIA5x95W3hw",
-    LinkedIn: "https://www.linkedin.com/in/pranit-gupta-803233190/",
-    GitHub: "https://github.com/Pranit5895",
-  },
-  {
     name: "Nandini Nanda",
     designation: "Editorial Lead",
     imageURL:
@@ -74,9 +66,9 @@ export const TeamData = [
     name: "Amrita",
     designation: "Design Lead",
     imageURL:
-      "",
-    LinkedIn: "",
-    GitHub: "",
+      "https://www.linkpicture.com/q/amrita_1.jpeg",
+    LinkedIn: "https://www.linkedin.com/in/amrita-dimri-a26438234",
+    GitHub: "https://github.com/Chaos07Child/Chaos07Child",
   },
   {
     name: "Bhavika Jetwani",
@@ -103,18 +95,10 @@ export const TeamData = [
     GitHub: "https://github.com/Kapoor-0905",
   },
   {
-    name: "Medhavi Singh",
-    designation: "Lead Student Developer",
-    imageURL:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQHpEcNQSafLqw/profile-displayphoto-shrink_800_800/0/1626580670698?e=2147483647&v=beta&t=Ef_sj9sMm8rMqOHB2QHWLvypai9vBw0ft6tG5CJukJk",
-    LinkedIn: "https://www.linkedin.com/in/medhavi-singh-8752091ba",
-    GitHub: "https://github.com/Med16-11",
-  },
-  {
     name: "Dhruv Lamba",
     designation: "Lead Student Developer",
     imageURL:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQHpEcNQSafLqw/profile-displayphoto-shrink_800_800/0/1626580670698?e=2147483647&v=beta&t=Ef_sj9sMm8rMqOHB2QHWLvypai9vBw0ft6tG5CJukJk",
+      "https://www.linkpicture.com/q/dhruv_1.jpg",
     LinkedIn: "https://www.linkedin.com/in/dhruv-lamba-21b3a8221/",
     GitHub: "https://github.com/DhruvLamba",
   },
@@ -127,18 +111,18 @@ export const TeamData = [
     GitHub: "https://github.com/pavvann",
   },
   {
-    name: "Ashutosh Kapoor",
+    name: "Aditya Punetha",
     designation: "Lead Student Developer",
     imageURL:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQHpEcNQSafLqw/profile-displayphoto-shrink_800_800/0/1626580670698?e=2147483647&v=beta&t=Ef_sj9sMm8rMqOHB2QHWLvypai9vBw0ft6tG5CJukJk",
-    LinkedIn: "https://www.linkedin.com/in/kapoor0905/",
-    GitHub: "https://github.com/Kapoor-0905",
+      "https://www.linkpicture.com/q/aditya_2.jpg",
+    LinkedIn: "https://www.linkedin.com/in/aditya-punetha/",
+    GitHub: "https://github.com/AdityaPunetha",
   },
   {
-    name: "Sudhanshu Shrotriya",
+    name: "Shudhanshu Shrotriya",
     designation: "Lead Student Developer",
     imageURL:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQHpEcNQSafLqw/profile-displayphoto-shrink_800_800/0/1626580670698?e=2147483647&v=beta&t=Ef_sj9sMm8rMqOHB2QHWLvypai9vBw0ft6tG5CJukJk",
+      "https://www.linkpicture.com/q/shudhanshu_1.jpg",
     LinkedIn: "https://www.linkedin.com/in/shudhanshu-shrotriya-599a84208/",
     GitHub: "https://github.com/ShudhanshuGR8",
   },
