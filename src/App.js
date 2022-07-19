@@ -8,6 +8,7 @@ import EventPage from "./screens/EventPage";
 
 import AuthenticationPage from "./screens/AuthenticationPage";
 import OSCPage from "./screens/OSCPage";
+import OSCLeaderboard from "./screens/OSCLeaderboard";
 import Page404 from "./screens/Page404";
 import RegisterPage from "./screens/RegisterPage";
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/authenticate" component={AuthenticationPage} />
         <Route path="/osc" exact component={OSCPage} />
         <Route path="/osc/register" component={RegisterPage} />
+        <Route path="/osc/leaderboard" component={OSCLeaderboard} />
         <Route path="*" component={Page404} />
       </Switch>
     </Router>
