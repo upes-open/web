@@ -4,6 +4,9 @@ import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import banner from "../assets/banner.png";
 import { OSCLeaderboardData } from "../data/OSCLeaderboardData";
+import medal from "../assets/medal.svg";
+import goldmedal from "../assets/goldmedal.svg";
+import bronzemedal from "../assets/bronzemedal.svg";
 
 import {
   Heading,
@@ -20,6 +23,7 @@ import {
   Wrap,
   WrapItem,
   Center,
+  Box,
 } from "@chakra-ui/react";
 
 function OSCLeaderboardTable() {
@@ -88,12 +92,23 @@ export default function OSCLeaderboard() {
                   <div>
                     <Heading as="h3">Name</Heading>
                     <br />
-                    <Text>Second</Text>{" "}
+                    <Image
+                      src={medal}
+                      alt="medal"
+                      width="100px"
+                      height="100px"
+                      style={{
+                        filter: "invert(0.5)",
+                      }}
+                    />
+                    <Text justify="center" align="center">
+                      Second
+                    </Text>{" "}
                   </div>
                 </Center>
               </WrapItem>
               <WrapItem boxShadow={"lg"}>
-                <Center
+                <Box
                   w="180px"
                   h="380px"
                   bg="white"
@@ -101,9 +116,24 @@ export default function OSCLeaderboard() {
                   zIndex={999}
                   borderTopLeftRadius={"md"}
                   borderTopRightRadius={"md"}
+                  justify="center"
+                  align="center"
                 >
-                  <Text>First</Text>{" "}
-                </Center>
+                  <div>
+                    <Heading as="h3" alignSelf={"flex-start"}>
+                      Name
+                    </Heading>
+                    <br />
+                    <Image
+                      src={goldmedal}
+                      alt="medal"
+                      width="100px"
+                      height="100px"
+                    />
+                    <br />
+                    <Text>First</Text>{" "}
+                  </div>
+                </Box>
               </WrapItem>
               <WrapItem>
                 <Center
@@ -114,7 +144,19 @@ export default function OSCLeaderboard() {
                   borderTopLeftRadius={"md"}
                   borderTopRightRadius={"md"}
                 >
-                  <Text>Third</Text>{" "}
+                  <div>
+                    <Heading as="h3">Name</Heading>
+                    <br />
+                    <Image
+                      src={bronzemedal}
+                      alt="medal"
+                      width="100px"
+                      height="100px"
+                    />
+                    <Text justify="center" align="center">
+                      Third
+                    </Text>{" "}
+                  </div>
                 </Center>
               </WrapItem>
             </Wrap>
