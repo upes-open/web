@@ -101,6 +101,7 @@ export default function OSCLeaderboard() {
                         filter: "invert(0.5)",
                       }}
                     />
+                    <br />
                     <Text justify="center" align="center">
                       Second
                     </Text>{" "}
@@ -119,6 +120,8 @@ export default function OSCLeaderboard() {
                   justify="center"
                   align="center"
                 >
+                  <br />
+
                   <div>
                     <Heading as="h3" alignSelf={"flex-start"}>
                       Name
@@ -153,6 +156,7 @@ export default function OSCLeaderboard() {
                       width="100px"
                       height="100px"
                     />
+                    <br />
                     <Text justify="center" align="center">
                       Third
                     </Text>{" "}
