@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -88,9 +87,9 @@ export default function OSCPage() {
 
         <Wrap spacing={7} justify="center" py={2}>
           <WrapItem>
-              <Button bg="green.400" colorScheme="green">
-                Registeration Closed
-              </Button>
+            <Button bg="green.400" colorScheme="green">
+              Registeration Closed
+            </Button>
           </WrapItem>
           <WrapItem>
             <Button
