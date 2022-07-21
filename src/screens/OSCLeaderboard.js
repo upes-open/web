@@ -90,7 +90,7 @@ export default function OSCLeaderboard() {
                   borderTopRightRadius={"md"}
                 >
                   <div>
-                    <Heading as="h3">Name</Heading>
+                    <Heading as="h3">Siddhant</Heading>
                     <br />
                     <Image
                       src={medal}
@@ -124,7 +124,7 @@ export default function OSCLeaderboard() {
 
                   <div>
                     <Heading as="h3" alignSelf={"flex-start"}>
-                      Name
+                      Saarini
                     </Heading>
                     <br />
                     <Image
@@ -148,7 +148,7 @@ export default function OSCLeaderboard() {
                   borderTopRightRadius={"md"}
                 >
                   <div>
-                    <Heading as="h3">Name</Heading>
+                    <Heading as="h3">Snigdha</Heading>
                     <br />
                     <Image
                       src={bronzemedal}
