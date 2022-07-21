@@ -88,6 +88,8 @@ export default function OSCLeaderboard() {
                   backgroundColor="white"
                   borderTopLeftRadius={"md"}
                   borderTopRightRadius={"md"}
+                  justify="center"
+                  align="center"
                 >
                   <div>
                     <Heading as="h3">Siddhant</Heading>
@@ -146,6 +148,8 @@ export default function OSCLeaderboard() {
                   alignSelf={"flex-end"}
                   borderTopLeftRadius={"md"}
                   borderTopRightRadius={"md"}
+                  justify="center"
+                  align="center"
                 >
                   <div>
                     <Heading as="h3">Snigdha</Heading>
