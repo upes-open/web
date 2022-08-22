@@ -11,6 +11,7 @@ import OSCPage from "./screens/OSCPage";
 import OSCLeaderboard from "./screens/OSCLeaderboard";
 import Page404 from "./screens/Page404";
 import RegisterPage from "./screens/RegisterPage";
+import FlutterEventPage from "./screens/FlutterEventPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path="/osc/register" element={<RegisterPage />} />
       <Route path="/osc/leaderboard" element={<OSCLeaderboard />} />
       <Route path="*" element={<Page404 />} />
+      <Route path="/flutterworkshop" element={<FlutterEventPage />} />
     </Routes>
   );
 }

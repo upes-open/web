@@ -95,7 +95,7 @@ export default function Footer() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2021 Open Community. All rights reserved</Text>
+          <Text>© 2022 Open Community. All rights reserved</Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton
               label={"Slack"}

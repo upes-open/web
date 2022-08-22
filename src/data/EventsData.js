@@ -1,5 +1,13 @@
 export const EventsData = [
   {
+    name: "Flutter Workshop",
+    text: "OPEN Community of UPES is back once again with another astounding event THE FLUTTER WORKSHOP. It’s a two-day long workshop, dedicated to address the students about this beautiful UI.  ",
+    imageURL: "https://www.linkpicture.com/q/@22posts.png",
+    date: "25-08-2022",
+    registeration: "https://forms.gle/vpsbQ4iXHzrLdnCG9",
+
+  },
+  {
     name: "Registration Drive 2022-23",
     text: "Our Community is pleased to declare that we welcome you to be an integral part of the core committee of trustees and more significantly, our family.",
     imageURL:
