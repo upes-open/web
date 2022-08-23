@@ -40,7 +40,7 @@ function FlutterStatsCard({ title, stat, icon }) {
     return (
       <Box maxW="7xl" mx={"auto"} pt={5} px={{ base: 2, sm: 12, md: 30 }}>
        
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 5, lg: 5 }}>
           <FlutterStatsCard
             title={"Starts from"}
             stat={"25 / 8 / 2022"}
