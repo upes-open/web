@@ -5,10 +5,15 @@ import TeamCard from "../components/TeamCard";
 import FacultyCard from "../components/FacultyCard";
 import CollaborationCard from "../components/CollaborationCard";
 import AlumniCard from "../components/AlumniCard";
+import TeamSlider from "../components/TeamSlider";
+import { SliderData } from "../data/SliderData";
+
+
 const TeamPage = () => {
   return (
     <div>
       <NavBar />
+      <TeamSlider images={SliderData} /> 
       <FacultyCard />
       <TeamCard />
       <CollaborationCard />

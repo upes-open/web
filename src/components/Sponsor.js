@@ -60,6 +60,15 @@ export default function Sponsors() {
               name={'Xebia'}
             />
           </Testimonial>
+          <Testimonial>
+            <Avatar
+            size="x1" width="200px" height="80px"
+              src={
+                'https://i.postimg.cc/NGTsbp06/GMC-logo.png'
+              }
+              name={'Give My Certificate'}
+            />
+          </Testimonial>
         </Stack>
       </Container>
     </Box>

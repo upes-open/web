@@ -40,11 +40,26 @@ export const TeamData = [
     GitHub: "https://github.com/NandiniNanda",
   },
   {
+    name: "Sona Tyagi",
+    designation: "Associate Editorial Lead",
+    imageURL:
+      "https://i.postimg.cc/Jth8rcCx/sona.jpg",
+    LinkedIn: "https://www.linkedin.com/in/sona-tyagi-a83644234",
+    GitHub: 0,
+  },
+  {
     name: "Snigdha Parashar",
     designation: "PR and Event Lead",
     imageURL: "https://www.linkpicture.com/q/snigdha.jpg",
     LinkedIn: "https://www.linkedin.com/in/snigdha-parashar-022aaa23b/",
     GitHub: "https://github.com/snigdha510",
+  },
+  {
+    name: "Bharti",
+    designation: "Associate PR and Event Lead",
+    imageURL: "https://i.postimg.cc/H8j16H9R/bharti.jpg",
+    LinkedIn: 0,
+    GitHub: 0,
   },
   {
     name: "Somyansh Avasthi",
