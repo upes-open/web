@@ -59,12 +59,12 @@ import {
           />
           <StatsCard
             title={'Projects'}
-            stat={'10+'}
+            stat={'25+'}
             icon={<FiServer size={'3em'} />}
           />
           <StatsCard
             title={'Workshops'}
-            stat={'7'}
+            stat={'11'}
             icon={<GoLocation size={'3em'} />}
           />
         </SimpleGrid>

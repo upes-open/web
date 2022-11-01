@@ -1,18 +1,33 @@
 export const EventsData = [
   {
-    name: "Flutter Workshop",
-    text: "OPEN Community of UPES is back once again with another astounding event THE FLUTTER WORKSHOP. It’s a two-day long workshop, dedicated to address the students about this beautiful UI.  ",
-    imageURL: "https://www.linkpicture.com/q/@22posts.png",
-    date: "25-08-2022",
-    registeration: "https://forms.gle/vpsbQ4iXHzrLdnCG9",
-
+    name: "Dehashed",
+    text: "OPEN Community along with WEB CRUX  brings to you ‘Dehashed’, a one-day workshop on Blockchain Technology to answer all your questions and more!",
+    imageURL:
+      "https://i.postimg.cc/SNbp9Tk9/dehashed.jpg",
+    date: "07-11-2022",
+    registeration: "https://dehashed.in/",
   },
   {
     name: "Registration Drive 2022-23",
     text: "Our Community is pleased to declare that we welcome you to be an integral part of the core committee of trustees and more significantly, our family.",
     imageURL:
       "https://drive.google.com/uc?export=view&id=1OszHe35ADNfCMxnPCawwziJ0C7L5uwDP",
-    date: "21-01-2022",
+    date: "17-09-2022",
+    registeration: 0,
+  },
+  {
+    name: "Flutter Workshop",
+    text: "OPEN Community of UPES is back once again with another astounding event THE FLUTTER WORKSHOP. It’s a two-day long workshop, dedicated to address the students about this beautiful UI.  ",
+    imageURL: "https://www.linkpicture.com/q/@22posts.png",
+    date: "25-08-2022",
+    registeration: 0,
+
+  },
+  {
+    name: "Open Summer of Code",
+    text: "Open Summer of Code was an event that runs from June to July 2022. Where students have opportunity to learn and grow through the open source community.",
+    imageURL: "https://www.linkpicture.com/q/osoc.jpg",
+    date: "15-06-2022",
     registeration: 0,
   },
   {

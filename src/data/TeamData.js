@@ -3,7 +3,7 @@ export const TeamData = [
     name: "Raghav Agarwal",
     designation: "President",
     imageURL:
-      "https://www.linkpicture.com/q/raghav.jpg",
+      "https://www.linkpicture.com/q/WhatsApp-Image-2022-09-18-at-3.42.08-PM.jpeg",
     GitHub: "https://github.com/ragharwal",
     LinkedIn: "https://www.linkedin.com/in/ragharwal/",
   },
@@ -14,14 +14,6 @@ export const TeamData = [
       "https://www.linkpicture.com/q/priyql.jpg",
     LinkedIn: "https://www.linkedin.com/in/priyal-gupta-b86a01193/",
     GitHub: "https://github.com/Priyal804",
-  },
-  {
-    name: "Aradhya Singh",
-    designation: "Treasurer",
-    imageURL:
-      "https://www.linkpicture.com/q/aradhya.jpg",
-    LinkedIn: "https://www.linkedin.com/in/aradhya-singh-7993751a8/",
-    GitHub: "https://github.com/optimizer-aa",
   },
   {
     name: "Sarthak Tiwari",
@@ -48,11 +40,26 @@ export const TeamData = [
     GitHub: "https://github.com/NandiniNanda",
   },
   {
+    name: "Sona Tyagi",
+    designation: "Associate Editorial Lead",
+    imageURL:
+      "https://i.postimg.cc/Jth8rcCx/sona.jpg",
+    LinkedIn: "https://www.linkedin.com/in/sona-tyagi-a83644234",
+    GitHub: 0,
+  },
+  {
     name: "Snigdha Parashar",
-    designation: "PR-Marketing Lead",
+    designation: "PR and Event Lead",
     imageURL: "https://www.linkpicture.com/q/snigdha.jpg",
     LinkedIn: "https://www.linkedin.com/in/snigdha-parashar-022aaa23b/",
     GitHub: "https://github.com/snigdha510",
+  },
+  {
+    name: "Bharti",
+    designation: "Associate PR and Event Lead",
+    imageURL: "https://i.postimg.cc/H8j16H9R/bharti.jpg",
+    LinkedIn: 0,
+    GitHub: 0,
   },
   {
     name: "Somyansh Avasthi",
@@ -95,12 +102,12 @@ export const TeamData = [
     GitHub: "https://github.com/Kapoor-0905",
   },
   {
-    name: "Dhruv Lamba",
+    name: "Saarini Ritesh",
     designation: "Lead Student Developer",
     imageURL:
-      "https://www.linkpicture.com/q/dhruv_1.jpg",
-    LinkedIn: "https://www.linkedin.com/in/dhruv-lamba-21b3a8221/",
-    GitHub: "https://github.com/DhruvLamba",
+      "https://i.postimg.cc/9zsKX08B/saarini.jpg",
+    LinkedIn: "https://www.linkedin.com/in/saariniritesh/",
+    GitHub: "https://github.com/saarinii",
   },
   {
     name: "Pawan Bajaj",
@@ -119,11 +126,19 @@ export const TeamData = [
     GitHub: "https://github.com/AdityaPunetha",
   },
   {
-    name: "Shudhanshu Shrotriya",
+    name: "Manan Gupta",
     designation: "Lead Student Developer",
     imageURL:
-      "https://www.linkpicture.com/q/shudhanshu_1.jpg",
-    LinkedIn: "https://www.linkedin.com/in/shudhanshu-shrotriya-599a84208/",
-    GitHub: "https://github.com/ShudhanshuGR8",
+      "https://i.postimg.cc/yJNvyCpd/manan.jpg",
+    LinkedIn: "https://www.linkedin.com/in/manan-gupta-0359a3205/",
+    GitHub: "https://github.com/manangupta19",
+  },
+  {
+    name: "Akanksha Gupta",
+    designation: "Lead Student Developer",
+    imageURL:
+      "https://i.postimg.cc/K41CyBNz/akanksha.jpg",
+    LinkedIn: "https://www.linkedin.com/in/akanksha-gupta-588046220",
+    GitHub: "https://github.com/akanksha2305", 
   },
 ];
