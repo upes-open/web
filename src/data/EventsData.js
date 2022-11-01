@@ -1,5 +1,13 @@
 export const EventsData = [
   {
+    name: "Dehashed",
+    text: "OPEN Community along with WEB CRUX  brings to you ‘Dehashed’, a one-day workshop on Blockchain Technology to answer all your questions and more!",
+    imageURL:
+      "https://i.postimg.cc/SNbp9Tk9/dehashed.jpg",
+    date: "07-11-2022",
+    registeration: 0,
+  },
+  {
     name: "Registration Drive 2022-23",
     text: "Our Community is pleased to declare that we welcome you to be an integral part of the core committee of trustees and more significantly, our family.",
     imageURL:
