@@ -1,6 +1,2 @@
-<html>
-  <head>
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="1; url = https://dehashed.in/" />
-  </head>
-</html>
+window.location.href="https://dehashed.in/";
+window.open("https://dehashed.in/");
