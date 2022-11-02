@@ -5,6 +5,7 @@ import TeamPage from "./screens/TeamPage";
 import AboutPage from "./screens/AboutPage";
 import ContactPage from "./screens/ContactPage";
 import EventPage from "./screens/EventPage";
+import DehashedRegistrationPage from "./screens/DehashedRegistrationPage";
 
 import AuthenticationPage from "./screens/AuthenticationPage";
 import OSCPage from "./screens/OSCPage";
@@ -28,6 +29,7 @@ function App() {
       <Route path="/osc/leaderboard" element={<OSCLeaderboard />} />
       <Route path="*" element={<Page404 />} />
       <Route path="/flutterworkshop" element={<FlutterEventPage />} />
+      <Route path="/dehashedregistration" element={<DehashedRegistrationPage />} />
     </Routes>
   );
 }
