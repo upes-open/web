@@ -29,7 +29,7 @@ function App() {
       <Route path="/osc/leaderboard" element={<OSCLeaderboard />} />
       <Route path="*" element={<Page404 />} />
       <Route path="/flutterworkshop" element={<FlutterEventPage />} />
-      <Route path="/dehashedregistration" element={<DehashedRegistrationPage />} />
+      <Route path="/dehashed" element={<DehashedRegistrationPage />} />
     </Routes>
   );
 }
