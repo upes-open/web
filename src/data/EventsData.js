@@ -5,7 +5,7 @@ export const EventsData = [
     imageURL:
       "https://i.postimg.cc/SNbp9Tk9/dehashed.jpg",
     date: "07-11-2022",
-    registeration: "https://dehashed.in/",
+    registeration: "https://www.google.co.in/",
   },
   {
     name: "Registration Drive 2022-23",
