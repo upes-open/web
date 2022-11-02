@@ -1,6 +1,5 @@
-import React from "react";
 
-const DehashedRegistrationPage = () => {
+function DehashedRegistrationPage(){
   return (
     <div>
     {window.location.href="https://dehashed.in/"};
@@ -10,3 +9,5 @@ const DehashedRegistrationPage = () => {
 };
 
 export default DehasedRegistrationPage;
+
+
