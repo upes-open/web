@@ -13,6 +13,7 @@ import OSCLeaderboard from "./screens/OSCLeaderboard";
 import Page404 from "./screens/Page404";
 import RegisterPage from "./screens/RegisterPage";
 import FlutterEventPage from "./screens/FlutterEventPage";
+import UiPathEventPage from "./screens/UiPathEventPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Route path="*" element={<Page404 />} />
       <Route path="/flutterworkshop" element={<FlutterEventPage />} />
       <Route path="/dehashed" element={<DehashedRegistrationPage />} />
+      <Route path="/rpa" element={<UiPathEventPage />} />      
     </Routes>
   );
 }
