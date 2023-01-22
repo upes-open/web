@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 
 import { SiWhatsapp } from "react-icons/si";
-import UiPathStats from "../components/UiPathStats";
+
 
 export default function UiPathEventPage() {
     return (
@@ -51,8 +51,10 @@ export default function UiPathEventPage() {
           of appreciation.
           </Text>
           <Text px={3} align="center" py={3} padding="0 15%">
-          What are you still waiting for? Register yourself to be one step ahead of the crowd. 
-          Contributed by: Anushka Srivastava
+          What are you still waiting for? Register yourself to be one step ahead of the crowd.
+          </Text>
+          <Text px={3} align="center" py={3} padding="0 15%">
+         Date: 23/01/2023
           </Text>
         </Stack>
         <Wrap spacing={7} justify="center" py={2}>
@@ -79,7 +81,6 @@ export default function UiPathEventPage() {
           </WrapItem>
         </Wrap>
       </Stack>
-      <UiPathStats />
       <Footer />
     </div>
     );
