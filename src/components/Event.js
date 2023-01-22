@@ -10,7 +10,7 @@ export default function Event() {
           color={"green.400"}
           fontWeight={"bold"}
         >
-          Open Event
+          Our Events
         </Heading>
         {/* <Text color={"gray.600"} fontSize={"xl"}>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

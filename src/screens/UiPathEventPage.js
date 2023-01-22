@@ -2,7 +2,7 @@ import React from "react";
 
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
-import UiPathbanner from "../assets/UiPathbanner";
+import UiPathbanner from "../assets/UiPathbanner.jpeg";
 
 import {
   Heading,
@@ -47,7 +47,7 @@ export default function UiPathEventPage() {
           <Text px={3} align="center" py={3} padding="0 15%">
           This workshop will not only help you to learn everything from scratch but will also make you 
           understand its long term benefits in your future business or career. A certificate of participation 
-          will be awarded to all the participants. Also, the winners of Quiz 1,2 and 3 will be getting certificates 
+          will be awarded to all the participants. Also, the winners of Quiz will be getting certificates 
           of appreciation.
           </Text>
           <Text px={3} align="center" py={3} padding="0 15%">
@@ -55,6 +55,7 @@ export default function UiPathEventPage() {
           </Text>
           <Text px={3} align="center" py={3} padding="0 15%">
          Date: 23/01/2023
+         Time: 14:00
           </Text>
         </Stack>
         <Wrap spacing={7} justify="center" py={2}>
