@@ -8,6 +8,13 @@ export const EventsData = [
     registeration: "https://docs.google.com/forms/d/e/1FAIpQLSddNCLgkAE4zsWoGuWlrevNv5qzwaeLnhkVMqJGaB8gLwDw_g/viewform?usp=sf_link",
   },
   {
+    name: "GIT Workshop and hands-on session",
+    text: "Learn Git and github from scratch",
+    imageURL: "https://ibb.co/TtX82pd",
+    date: "18-01-2023",
+    registeration: 0,
+  },
+  {
     name: "Dehashed",
     text: "OPEN Community along with WEB CRUX  brings to you ‘Dehashed’, a one-day workshop on Blockchain Technology to answer all your questions and more!",
     imageURL:
